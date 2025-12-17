@@ -22,8 +22,10 @@ function dk_is_elementor_active() {
 function dk_register_elementor_widgets($widgets_manager) {
     // Include all widget files
     $widgets = array(
+        'dk-header',
         'dk-header-logo',
         'dk-header-search',
+        'dk-footer',
         'dk-footer-logo',
         'dk-product-card',
         'dk-hero-section',
@@ -34,6 +36,8 @@ function dk_register_elementor_widgets($widgets_manager) {
         'dk-testimonials',
         'dk-faq-accordion',
         'dk-cta-section',
+        'dk-categories-section',
+        'dk-about-section',
         'dk-product-filters',
         'dk-product-listing',
         'dk-product-gallery',
@@ -56,8 +60,10 @@ function dk_register_elementor_widgets($widgets_manager) {
 
     // Register widgets
     $widget_classes = array(
+        'DK_Header_Widget',
         'DK_Header_Logo_Widget',
         'DK_Header_Search_Widget',
+        'DK_Footer_Widget',
         'DK_Footer_Logo_Widget',
         'DK_Product_Card_Widget',
         'DK_Hero_Section_Widget',
@@ -68,6 +74,8 @@ function dk_register_elementor_widgets($widgets_manager) {
         'DK_Testimonials_Widget',
         'DK_FAQ_Accordion_Widget',
         'DK_CTA_Section_Widget',
+        'DK_Categories_Section_Widget',
+        'DK_About_Section_Widget',
         'DK_Product_Filters_Widget',
         'DK_Product_Listing_Widget',
         'DK_Product_Gallery_Widget',

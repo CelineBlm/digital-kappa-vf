@@ -70,19 +70,39 @@ function digital_kappa_enqueue_assets() {
         null
     );
 
-    // Tailwind CSS via CDN
-    wp_enqueue_style(
-        'tailwindcss',
-        'https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css',
+    // Tailwind CSS Play CDN (supports arbitrary values)
+    wp_enqueue_script(
+        'tailwindcss-cdn',
+        'https://cdn.tailwindcss.com',
         array(),
-        '3.4.0'
+        null,
+        false
     );
+
+    // Tailwind config for Digital Kappa
+    wp_add_inline_script('tailwindcss-cdn', "
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dk-gold': '#d2a30b',
+                        'dk-gold-hover': '#b8900a',
+                        'dk-gold-light': '#fffbf0',
+                    },
+                    fontFamily: {
+                        'merriweather': ['Merriweather', 'serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    ", 'after');
 
     // Main styles (copy of globals.css)
     wp_enqueue_style(
         'digital-kappa-styles',
         DK_THEME_URI . '/assets/css/digital-kappa-styles.css',
-        array('tailwindcss'),
+        array(),
         DK_THEME_VERSION
     );
 

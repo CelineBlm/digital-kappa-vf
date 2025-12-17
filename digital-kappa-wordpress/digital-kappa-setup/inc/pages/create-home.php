@@ -63,25 +63,31 @@ function dk_create_home_page() {
         dk_create_section(
             dk_create_column(100, array(
                 dk_create_widget('dk_product_grid', array(
-                    'title' => 'Nos ressources populaires',
-                    'products_count' => 6,
+                    'section_title' => 'Découvrez nos produits',
+                    'section_description' => 'Une sélection de produits digitaux de haute qualité pour développeurs et créateurs',
+                    'products_count' => 3,
                     'columns' => '3',
+                    'show_button' => 'yes',
+                    'button_text' => 'Voir tous les produits',
                 )),
             ))
         ),
-        // Process Section
+        // Categories Section
         dk_create_section(
             dk_create_column(100, array(
-                dk_create_widget('dk_process_section', array(
-                    'title' => 'Un processus simple et rapide',
+                dk_create_widget('dk_categories_section', array(
+                    'section_title' => 'Catégories de produits',
+                    'section_description' => 'Explorez notre sélection organisée de produits digitaux dans nos catégories principales',
                 )),
             ))
         ),
-        // Testimonials Section
+        // About Section
         dk_create_section(
             dk_create_column(100, array(
-                dk_create_widget('dk_testimonials', array(
-                    'title' => 'Ce que disent nos clients',
+                dk_create_widget('dk_about_section', array(
+                    'section_title' => 'Digital Kappa, votre partenaire digital',
+                    'description_1' => 'Chez Digital Kappa, nous créons et sélectionnons avec soin chaque produit digital pour répondre aux besoins des entrepreneurs, développeurs et créateurs modernes.',
+                    'description_2' => 'Notre mission est de vous faire gagner du temps en vous proposant des solutions prêtes à l\'emploi, testées et documentées.',
                 )),
             ))
         ),

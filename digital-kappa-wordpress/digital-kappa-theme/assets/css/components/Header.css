@@ -1,0 +1,157 @@
+/* ============================================
+   HEADER - Digital Kappa
+   ============================================ */
+
+.header-dk {
+  background-color: white;
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header-dk .container-dk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .header-dk .container-dk {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Logo */
+.header-dk .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-dk .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-dk .logo-title {
+  font-family: var(--dk-font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+@media (min-width: 1024px) {
+  .header-dk .logo-title {
+    font-size: 1.5rem;
+  }
+}
+
+.header-dk .logo-subtitle {
+  font-size: 0.625rem;
+  color: #d2a30b;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--dk-font-body);
+}
+
+/* Navigation */
+.header-dk nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .header-dk nav {
+    display: flex;
+  }
+}
+
+.header-dk .nav-link-dk {
+  color: #1a1a1a;
+  transition: color 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.header-dk .nav-link-dk:hover {
+  color: #d2a30b;
+}
+
+.header-dk .nav-link-dk-active {
+  color: #d2a30b;
+  font-weight: 500;
+}
+
+/* Barre de recherche */
+.header-dk .search-container {
+  position: relative;
+  flex: 1;
+  max-width: 28rem;
+  margin: 0 2rem;
+}
+
+.header-dk .search-input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  outline: none;
+}
+
+.header-dk .search-input:focus {
+  box-shadow: 0 0 0 2px #d2a30b;
+  border-color: transparent;
+}
+
+.header-dk .search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* Menu mobile */
+.header-dk .mobile-menu-button {
+  display: block;
+  padding: 0.5rem;
+  color: #1a1a1a;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .header-dk .mobile-menu-button {
+    display: none;
+  }
+}
+
+.header-dk .mobile-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #f3f4f6;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .header-dk .mobile-menu {
+    display: none;
+  }
+}
+
+.header-dk .mobile-menu .nav-link-dk {
+  display: block;
+  padding: 0.5rem 0;
+}

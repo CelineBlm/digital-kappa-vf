@@ -1,0 +1,348 @@
+/* ============================================
+   DIGITAL KAPPA - Main Stylesheet
+   WordPress Theme Version
+   ============================================ */
+
+/* ============================================
+   TOKENS & VARIABLES DE BASE
+   ============================================ */
+
+:root {
+  /* Système de design de base */
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --radius: 0.625rem;
+
+  /* ============================================
+     VARIABLES SPÉCIFIQUES DIGITAL KAPPA
+     ============================================ */
+
+  /* Couleurs de la marque */
+  --dk-gold: #d2a30b;
+  --dk-gold-hover: #b8900a;
+  --dk-gold-light: #fffbf0;
+
+  /* Couleurs de texte */
+  --dk-text-primary: #1a1a1a;
+  --dk-text-primary-alt: #0d1421;
+  --dk-text-secondary: #4a5565;
+  --dk-text-muted: rgba(13, 20, 33, 0.7);
+
+  /* Couleurs de fond */
+  --dk-bg-dark: #2b2d31;
+  --dk-bg-dark-alt: #1a1a1a;
+  --dk-bg-dark-card: #2c3340;
+  --dk-bg-light: #f9fafb;
+  --dk-bg-gray: #f0f2f5;
+
+  /* Bordures et ombres */
+  --dk-border: #f0f2f5;
+  --dk-border-gray: #e5e7eb;
+
+  /* Typographie */
+  --dk-font-heading: 'Merriweather', serif;
+  --dk-font-body: 'Montserrat', sans-serif;
+}
+
+/* ============================================
+   STYLES DE BASE
+   ============================================ */
+
+* {
+  border-color: var(--border);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--dk-font-body);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* ============================================
+   TYPOGRAPHIE STANDARDISÉE DIGITAL KAPPA
+   ============================================ */
+
+/* Titres avec Merriweather */
+h1 {
+  font-family: var(--dk-font-heading);
+  font-size: 3rem; /* 48px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+  color: var(--dk-text-primary-alt);
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--dk-font-heading);
+  font-size: 2rem; /* 32px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+  color: var(--dk-text-primary);
+  margin: 0;
+}
+
+h3 {
+  font-family: var(--dk-font-heading);
+  font-size: 1.5rem; /* 24px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  color: var(--dk-text-primary);
+  margin: 0;
+}
+
+h4 {
+  font-family: var(--dk-font-heading);
+  font-size: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  color: var(--dk-text-primary);
+  margin: 0;
+}
+
+h5 {
+  font-family: var(--dk-font-heading);
+  font-size: 1.125rem; /* 18px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  color: var(--dk-text-primary);
+  margin: 0;
+}
+
+h6 {
+  font-family: var(--dk-font-heading);
+  font-size: 1rem; /* 16px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  color: var(--dk-text-primary);
+  margin: 0;
+}
+
+/* Paragraphes et corps de texte */
+p {
+  font-family: var(--dk-font-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Labels et boutons */
+label {
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+button {
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+/* Inputs */
+input, textarea, select {
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+}
+
+/* ============================================
+   CLASSES UTILITAIRES DIGITAL KAPPA
+   ============================================ */
+
+/* Boutons */
+.btn-dk-primary {
+  background-color: #d2a30b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-dk-primary:hover {
+  background-color: #b8900a;
+}
+
+.btn-dk-secondary {
+  background-color: white;
+  color: #d2a30b;
+  border: 1px solid #d2a30b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-dk-secondary:hover {
+  background-color: #fffbf0;
+}
+
+.btn-dk-dark {
+  background-color: #2b2d31;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-dk-dark:hover {
+  background-color: #3a3d42;
+}
+
+/* Conteneurs */
+.container-dk {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-dk-narrow {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-dk-wide {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Badges */
+.badge-dk-gold {
+  background-color: #d2a30b;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.badge-dk-light {
+  background-color: white;
+  color: #d2a30b;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d2a30b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Formulaires */
+.input-dk {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.input-dk:focus {
+  box-shadow: 0 0 0 2px #d2a30b;
+  border-color: transparent;
+}
+
+.textarea-dk {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.textarea-dk:focus {
+  box-shadow: 0 0 0 2px #d2a30b;
+  border-color: transparent;
+}
+
+.label-dk {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Animations */
+.animate-fade-in-dk {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   STYLES RESPONSIVES
+   ============================================ */
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25rem; /* 36px sur mobile */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 28px sur mobile */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* 20px sur mobile */
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+}

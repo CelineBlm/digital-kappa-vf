@@ -337,6 +337,43 @@ input, textarea, select {
 }
 
 /* ============================================
+   WORDPRESS SPECIFIC FIXES
+   ============================================ */
+
+/* Hide default page title on Elementor pages */
+.elementor-page .entry-title,
+.elementor-page h1.page-title,
+.page .entry-title,
+body.page-template-elementor_header_footer .entry-title,
+body.dk-home .entry-title,
+body.home .entry-title {
+  display: none !important;
+}
+
+/* Hide page title shown outside content */
+.site-content > .entry-title,
+#content > .entry-title,
+.site > .entry-title {
+  display: none !important;
+}
+
+/* Fix for Elementor container width */
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1280px;
+}
+
+/* Remove default WordPress margins */
+.entry-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix anchor links */
+a {
+  text-decoration: none;
+}
+
+/* ============================================
    PRINT STYLES
    ============================================ */
 

@@ -36,11 +36,14 @@ function dk_create_home_page() {
         dk_create_section(
             dk_create_column(100, array(
                 dk_create_widget('dk_hero_section', array(
-                    'badge' => '✨ Ressources Premium',
-                    'title' => 'Propulsez vos projets avec des ressources numériques de qualité premium',
-                    'description' => 'Découvrez notre collection exclusive de templates, UI kits, icônes et ressources graphiques créés par des designers experts pour des projets exceptionnels.',
-                    'primary_button_text' => 'Découvrir les ressources',
-                    'secondary_button_text' => 'Comment ça marche',
+                    'badge_text' => 'Lancement officiel - Nouveaux produits disponibles',
+                    'title_line_1' => 'Marketplace de',
+                    'title_line_2' => 'produits digitaux',
+                    'description' => 'Découvrez une sélection de produits digitaux de qualité : applications mobiles, ebooks et templates pour booster votre productivité. Achat simple en un clic, téléchargement immédiat, accès à vie.',
+                    'button_primary_text' => 'Explorer les produits',
+                    'button_secondary_text' => 'Comment ça marche',
+                    'button_primary_link' => array('url' => '/produits/'),
+                    'button_secondary_link' => array('url' => '/comment-ca-marche/'),
                 )),
             )),
             array('structure' => '10', 'content_width' => 'full')
@@ -49,7 +52,8 @@ function dk_create_home_page() {
         dk_create_section(
             dk_create_column(100, array(
                 dk_create_widget('dk_features_section', array(
-                    'title' => 'Pourquoi choisir nos ressources ?',
+                    'section_title' => 'Pourquoi choisir Digital Kappa',
+                    'section_description' => 'Une plateforme conçue pour vous offrir la meilleure expérience d\'achat de produits digitaux',
                 )),
             ))
         ),
@@ -95,7 +99,8 @@ function dk_create_home_page() {
         dk_create_section(
             dk_create_column(100, array(
                 dk_create_widget('dk_faq_accordion', array(
-                    'title' => 'Questions fréquentes',
+                    'section_title' => 'Questions fréquentes',
+                    'section_description' => 'Tout ce que vous devez savoir sur Digital Kappa',
                 )),
             ))
         ),
@@ -103,9 +108,10 @@ function dk_create_home_page() {
         dk_create_section(
             dk_create_column(100, array(
                 dk_create_widget('dk_cta_section', array(
-                    'title' => 'Prêt à transformer vos projets ?',
-                    'description' => 'Rejoignez des milliers de créateurs qui utilisent déjà nos ressources pour leurs projets.',
-                    'button_text' => 'Parcourir les ressources',
+                    'title' => 'Prêt à découvrir nos produits digitaux ?',
+                    'description' => 'Rejoignez des centaines de développeurs et créateurs qui utilisent nos produits pour accélérer leurs projets',
+                    'button_text' => 'Explorer le catalogue',
+                    'button_link' => array('url' => '/produits/'),
                 )),
             ))
         ),
@@ -122,7 +128,8 @@ function dk_create_home_page() {
             '_elementor_edit_mode' => 'builder',
             '_elementor_template_type' => 'wp-page',
             '_elementor_version' => '3.0.0',
-            '_elementor_data' => wp_json_encode($elementor_data),
+            '_elementor_data' => json_encode($elementor_data, JSON_UNESCAPED_UNICODE),
+            '_wp_page_template' => 'elementor_header_footer',
         ),
     ));
 

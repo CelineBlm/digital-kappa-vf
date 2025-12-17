@@ -47,7 +47,7 @@ function dk_create_faq_page() {
             '_elementor_edit_mode' => 'builder',
             '_elementor_template_type' => 'wp-page',
             '_elementor_version' => '3.0.0',
-            '_elementor_data' => wp_json_encode($elementor_data),
+            '_elementor_data' => json_encode($elementor_data, JSON_UNESCAPED_UNICODE),
         ),
     ));
 

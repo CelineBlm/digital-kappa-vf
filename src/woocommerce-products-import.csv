@@ -1,0 +1,172 @@
+ID,Type,SKU,Name,Published,Is featured?,Visibility in catalog,Short description,Description,Tax status,In stock?,Stock,Backorders allowed?,Sold individually?,Weight (kg),Length (cm),Width (cm),Height (cm),Allow customer reviews?,Purchase note,Sale price,Regular price,Categories,Tags,Images,Download 1 name,Download 1 URL,Download limit,Download expiry days,Product page URL,Button text,Position,Attribute 1 name,Attribute 1 value(s),Attribute 1 visible,Attribute 1 global,Meta: rating,Meta: review_count,Meta: features,Meta: included,Meta: requirements
+guide-dev-moderne,simple,EBOOK-001,Guide du développeur moderne,1,0,visible,"Ebook complet pour maîtriser les outils et pratiques du développement moderne. 250+ pages de contenu pratique.","Guide complet de 250+ pages couvrant les outils, pratiques et méthodologies du développement moderne. Des bases aux techniques avancées, avec exemples pratiques et projets réels.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>250+ pages de contenu</li>
+<li>10 chapitres détaillés</li>
+<li>Exemples de code pratiques</li>
+<li>Projets réels inclus</li>
+<li>Formats PDF, EPUB, MOBI</li>
+<li>Mises à jour gratuites à vie</li>
+<li>Ressources téléchargeables</li>
+<li>Accès à la communauté</li>
+</ul>
+
+<h2>Ce qui est inclus</h2>
+<ul>
+<li>Ebook complet (PDF, EPUB, MOBI)</li>
+<li>Code source des exemples</li>
+<li>Fiches récapitulatives PDF</li>
+<li>Accès communauté Discord</li>
+<li>Mises à jour gratuites</li>
+</ul>
+
+<h2>Prérequis</h2>
+<ul>
+<li>Connaissances de base en programmation</li>
+<li>Motivation pour apprendre</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,59,Ebook,"développement, programmation, code, formation, ebook",https://images.unsplash.com/photo-1675495277087-10598bf7bcd1?w=1080,Guide du développeur moderne - Package complet,https://example.com/downloads/guide-dev-moderne.zip,-1,-1,,,0,,,,,,4.8,127,"250+ pages de contenu|10 chapitres détaillés|Exemples de code pratiques|Projets réels inclus|Formats PDF, EPUB, MOBI|Mises à jour gratuites à vie|Ressources téléchargeables|Accès à la communauté","Ebook complet (PDF, EPUB, MOBI)|Code source des exemples|Fiches récapitulatives PDF|Accès communauté Discord|Mises à jour gratuites","Connaissances de base en programmation|Motivation pour apprendre"
+design-system-pro,simple,TEMPLATE-001,Design System Pro,1,1,visible,"Système de design complet avec composants React, Figma et documentation. Plus de 200 composants prêts à l'emploi.","Un système de design professionnel comprenant plus de 200 composants React configurables, fichiers Figma organisés et documentation complète. Idéal pour démarrer rapidement vos projets.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>200+ composants React</li>
+<li>Fichiers Figma inclus</li>
+<li>Documentation interactive</li>
+<li>Thème personnalisable</li>
+<li>TypeScript natif</li>
+<li>Accessibilité WCAG 2.1</li>
+<li>Mode sombre intégré</li>
+<li>Support premium 6 mois</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,149,Template,"react, figma, design system, components, typescript",https://images.unsplash.com/photo-1698440050363-1697e5f0277c?w=1080,Design System Pro - Package complet,https://example.com/downloads/design-system-pro.zip,-1,-1,,,0,,,,,,4.9,89,"200+ composants React|Fichiers Figma inclus|Documentation interactive|Thème personnalisable|TypeScript natif|Accessibilité WCAG 2.1|Mode sombre intégré|Support premium 6 mois","Librairie complète de composants|Fichiers Figma sources|Documentation Storybook|Exemples d'intégration|Support technique 6 mois|Mises à jour pendant 1 an","Connaissances en React|Bases de TypeScript recommandées"
+masterclass-ui-ux,simple,EBOOK-002,Masterclass UI/UX Design,1,0,visible,"Formation complète en design d'interfaces et expérience utilisateur. 15 heures de contenu vidéo + workbook PDF.","Formation vidéo complète sur le design UI/UX moderne. Apprenez les principes fondamentaux, les outils professionnels et les méthodologies éprouvées utilisées par les grandes entreprises tech.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>15 heures de vidéo HD</li>
+<li>8 modules progressifs</li>
+<li>Workbook PDF 120 pages</li>
+<li>20 exercices pratiques</li>
+<li>Projets de portfolio</li>
+<li>Templates Figma inclus</li>
+<li>Certificat de completion</li>
+<li>Accès à vie</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,79,Ebook,"ui, ux, design, formation, figma, interface",https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1080,Masterclass UI/UX Design - Formation complète,https://example.com/downloads/masterclass-ui-ux.zip,-1,-1,,,0,,,,,,4.7,203,"15 heures de vidéo HD|8 modules progressifs|Workbook PDF 120 pages|20 exercices pratiques|Projets de portfolio|Templates Figma inclus|Certificat de completion|Accès à vie","Vidéos de formation complètes|Workbook PDF interactif|Templates et ressources|Exercices corrigés|Communauté privée|Mises à jour futures","Aucune expérience requise|Passion pour le design"
+app-fitness-tracker,simple,APP-001,Fitness Tracker Pro,1,1,visible,"Application mobile complète de suivi fitness. Code source React Native + backend Node.js avec API REST.","Application mobile complète de tracking fitness avec fonctionnalités avancées : suivi d'entraînements, nutrition, objectifs, statistiques détaillées. Code source complet pour iOS et Android.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>Code React Native complet</li>
+<li>Backend Node.js + MongoDB</li>
+<li>Authentification sécurisée</li>
+<li>Tracking GPS intégré</li>
+<li>Graphiques et statistiques</li>
+<li>Push notifications</li>
+<li>Mode hors-ligne</li>
+<li>Documentation complète</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,199,Application,"fitness, react native, mobile app, nodejs, mongodb",https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1080,Fitness Tracker Pro - Code source complet,https://example.com/downloads/fitness-tracker-pro.zip,-1,-1,,,0,,,,,,4.6,56,"Code React Native complet|Backend Node.js + MongoDB|Authentification sécurisée|Tracking GPS intégré|Graphiques et statistiques|Push notifications|Mode hors-ligne|Documentation complète","Code source complet|Base de données configurée|API REST documentée|Design Figma|Guide de déploiement|Support technique 3 mois","Connaissances React/React Native|Bases en Node.js|Compte développeur mobile"
+landing-page-saas,simple,TEMPLATE-002,Landing Page SaaS,1,1,visible,"Template de landing page moderne pour SaaS. Next.js 14, TypeScript, Tailwind CSS. 12 sections personnalisables.","Template professionnel de landing page pour produits SaaS. Optimisé pour la conversion avec animations fluides, sections modulaires et design responsive parfait.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>12 sections prêtes</li>
+<li>Next.js 14 + TypeScript</li>
+<li>Tailwind CSS</li>
+<li>Animations Framer Motion</li>
+<li>SEO optimisé</li>
+<li>Performance maximale</li>
+<li>Formulaires validés</li>
+<li>Multi-langue ready</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,49,Template,"saas, landing page, nextjs, tailwind, typescript",https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1080,Landing Page SaaS - Template complet,https://example.com/downloads/landing-page-saas.zip,-1,-1,,,0,,,,,,4.9,312,"12 sections prêtes|Next.js 14 + TypeScript|Tailwind CSS|Animations Framer Motion|SEO optimisé|Performance maximale|Formulaires validés|Multi-langue ready","Code source complet|Fichiers Figma|Composants réutilisables|Documentation détaillée|Déploiement Vercel|Mises à jour 1 an","Connaissances React/Next.js|Bases Tailwind CSS"
+ia-marketing-guide,simple,EBOOK-003,IA pour le Marketing Digital,1,0,visible,"Guide pratique pour utiliser l'IA dans vos campagnes marketing. 180 pages + 30 prompts ChatGPT prêts à l'emploi.","Découvrez comment l'intelligence artificielle révolutionne le marketing digital. Stratégies concrètes, cas d'usage réels et prompts optimisés pour ChatGPT, Midjourney et autres outils IA.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>180 pages de contenu</li>
+<li>30 prompts ChatGPT</li>
+<li>15 cas d'usage réels</li>
+<li>Stratégies éprouvées</li>
+<li>Templates inclus</li>
+<li>Ressources bonus</li>
+<li>Updates régulières</li>
+<li>Communauté privée</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,39,Ebook,"ia, chatgpt, marketing, digital, prompts, formation",https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1080,IA Marketing - Guide complet,https://example.com/downloads/ia-marketing-guide.zip,-1,-1,,,0,,,,,,4.8,167,"180 pages de contenu|30 prompts ChatGPT|15 cas d'usage réels|Stratégies éprouvées|Templates inclus|Ressources bonus|Updates régulières|Communauté privée","Ebook PDF complet|Bibliothèque de prompts|Templates de campagnes|Checklist marketing IA|Accès communauté Slack|Bonus vidéos","Bases en marketing digital|Curiosité pour l'IA"
+dashboard-admin,simple,TEMPLATE-003,Dashboard Admin Pro,1,0,visible,"Template de tableau de bord admin complet. React + TypeScript + Chart.js. Plus de 50 pages et composants.","Dashboard administratif professionnel avec plus de 50 pages préconstruites. Graphiques interactifs, tables de données avancées, formulaires validés et authentification complète.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>50+ pages préconstruites</li>
+<li>React 18 + TypeScript</li>
+<li>Chart.js + Recharts</li>
+<li>Tables de données</li>
+<li>Auth complète</li>
+<li>Mode sombre</li>
+<li>Responsive design</li>
+<li>Documentation complète</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,129,Template,"dashboard, admin, react, typescript, charts",https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1080,Dashboard Admin Pro - Template complet,https://example.com/downloads/dashboard-admin.zip,-1,-1,,,0,,,,,,4.7,94,"50+ pages préconstruites|React 18 + TypeScript|Chart.js + Recharts|Tables de données|Auth complète|Mode sombre|Responsive design|Documentation complète","Code source complet|Composants réutilisables|API mock intégrée|Thèmes personnalisables|Guide d'intégration|Support 6 mois","Expérience React|TypeScript recommandé"
+ecommerce-starter,simple,APP-002,E-commerce Starter Kit,1,1,visible,"Kit complet pour créer votre boutique en ligne. Next.js + Stripe + CMS headless. Prêt à déployer.","Solution e-commerce complète et moderne. Intégration Stripe pour les paiements, CMS headless pour la gestion de contenu, dashboard admin et optimisations SEO avancées.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>Next.js 14 complet</li>
+<li>Intégration Stripe</li>
+<li>CMS Headless</li>
+<li>Dashboard vendeur</li>
+<li>Gestion stock</li>
+<li>SEO optimisé</li>
+<li>Email automatisés</li>
+<li>Multi-devises</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,249,Application,"ecommerce, nextjs, stripe, cms, boutique",https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1080,E-commerce Starter Kit - Full-stack,https://example.com/downloads/ecommerce-starter.zip,-1,-1,,,0,,,,,,4.9,71,"Next.js 14 complet|Intégration Stripe|CMS Headless|Dashboard vendeur|Gestion stock|SEO optimisé|Email automatisés|Multi-devises","Code source full-stack|Setup Stripe inclus|CMS configuré|Templates emails|Guide de déploiement|Support premium 1 an","Connaissances Next.js|Bases en e-commerce|Compte Stripe"
+podcast-production,simple,EBOOK-004,Guide Production Podcast,1,0,visible,"Guide complet pour lancer et monétiser votre podcast. De l'équipement au marketing, tout est couvert.","Le guide ultime pour créer, produire et monétiser un podcast professionnel. Équipement recommandé, techniques d'enregistrement, édition, distribution et stratégies de monétisation.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>200 pages détaillées</li>
+<li>Guide équipement</li>
+<li>Techniques d'édition</li>
+<li>Stratégies marketing</li>
+<li>Monétisation</li>
+<li>Templates inclus</li>
+<li>Ressources audio</li>
+<li>Communauté</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,45,Ebook,"podcast, audio, production, marketing, monétisation",https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=1080,Guide Production Podcast - Complet,https://example.com/downloads/podcast-production.zip,-1,-1,,,0,,,,,,4.6,138,"200 pages détaillées|Guide équipement|Techniques d'édition|Stratégies marketing|Monétisation|Templates inclus|Ressources audio|Communauté","Ebook PDF complet|Checklist équipement|Templates de scripts|Guide de montage|Stratégies de croissance|Accès communauté","Passion pour l'audio|Volonté de créer"
+mobile-ui-kit,simple,TEMPLATE-004,Mobile UI Kit Premium,1,1,visible,"Kit UI mobile avec 150+ écrans pour iOS et Android. Figma + React Native components. Design moderne.","Collection premium de 150+ écrans mobile design pour iOS et Android. Fichiers Figma organisés, composants React Native et guidelines de design pour une cohérence parfaite.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>150+ écrans design</li>
+<li>Figma + React Native</li>
+<li>iOS + Android</li>
+<li>Composants modulaires</li>
+<li>Design system inclus</li>
+<li>Icônes personnalisées</li>
+<li>Animations fluides</li>
+<li>Mises à jour régulières</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,89,Template,"mobile, ui kit, figma, react native, ios, android",https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1080,Mobile UI Kit Premium - Complet,https://example.com/downloads/mobile-ui-kit.zip,-1,-1,,,0,,,,,,4.8,156,"150+ écrans design|Figma + React Native|iOS + Android|Composants modulaires|Design system inclus|Icônes personnalisées|Animations fluides|Mises à jour régulières","Fichiers Figma complets|Composants React Native|Guide de style|Icônes SVG|Templates d'écrans|Support 3 mois","Connaissances design mobile|Figma ou React Native"
+seo-ultimate-guide,simple,EBOOK-005,SEO - Le Guide Ultime 2024,1,1,visible,"Formation SEO complète et à jour. Stratégies on-page, off-page, technique. 300 pages + outils inclus.","Le guide SEO le plus complet en français. Toutes les stratégies actualisées pour 2024 : optimisation technique, contenu, netlinking, SEO local et international. Cas pratiques inclus.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>300 pages de contenu</li>
+<li>Stratégies 2024</li>
+<li>SEO technique</li>
+<li>Content marketing</li>
+<li>Link building</li>
+<li>SEO local</li>
+<li>Outils recommandés</li>
+<li>Études de cas</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,69,Ebook,"seo, référencement, google, marketing, optimisation",https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1080,SEO Guide Ultime 2024 - Formation complète,https://example.com/downloads/seo-ultimate-guide.zip,-1,-1,,,0,,,,,,4.9,245,"300 pages de contenu|Stratégies 2024|SEO technique|Content marketing|Link building|SEO local|Outils recommandés|Études de cas","Ebook PDF complet|Checklist SEO complète|Templates de contenu|Outils et ressources|Bonus vidéos|Updates gratuites","Bases en marketing web|Site web existant ou projet"
+portfolio-creative,simple,TEMPLATE-005,Portfolio Créatif Animé,1,0,visible,"Template portfolio avec animations impressionnantes. Next.js + Three.js + Framer Motion. Unique et moderne.","Template de portfolio créatif avec animations 3D et effets visuels époustouflants. Parfait pour designers, développeurs et créatifs qui veulent se démarquer.
+
+<h2>Fonctionnalités clés</h2>
+<ul>
+<li>Animations 3D Three.js</li>
+<li>Next.js 14</li>
+<li>Framer Motion</li>
+<li>Scroll animations</li>
+<li>Galerie interactive</li>
+<li>Blog intégré</li>
+<li>Contact form</li>
+<li>Performance optimale</li>
+</ul>",taxable,1,,0,0,,,,,1,Téléchargement instantané après achat.,,,79,Template,"portfolio, nextjs, threejs, animations, creative",https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1080,Portfolio Créatif Animé - Template,https://example.com/downloads/portfolio-creative.zip,-1,-1,,,0,,,,,,4.7,103,"Animations 3D Three.js|Next.js 14|Framer Motion|Scroll animations|Galerie interactive|Blog intégré|Contact form|Performance optimale","Code source complet|Assets 3D inclus|Composants animés|CMS headless setup|Documentation|Support 3 mois","Connaissances React/Next.js|Sensibilité artistique"

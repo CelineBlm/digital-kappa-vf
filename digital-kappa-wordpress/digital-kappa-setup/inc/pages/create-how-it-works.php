@@ -19,72 +19,27 @@ function dk_create_how_it_works_page() {
     }
 
     $elementor_data = array(
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'Comment ça marche',
-                                'description' => 'Découvrez en quelques étapes simples comment accéder à nos ressources premium et les utiliser dans vos projets.',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'Comment ça marche',
+                    'description' => 'Découvrez en quelques étapes simples comment accéder à nos ressources premium et les utiliser dans vos projets.',
+                )),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_process_section',
-                            'settings' => array('title' => ''),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_process_section', array('title' => '')),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_cta_section',
-                            'settings' => array(
-                                'title' => 'Prêt à commencer ?',
-                                'description' => 'Explorez notre catalogue et trouvez les ressources parfaites pour vos projets.',
-                                'button_text' => 'Découvrir les ressources',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_cta_section', array(
+                    'title' => 'Prêt à commencer ?',
+                    'description' => 'Explorez notre catalogue et trouvez les ressources parfaites pour vos projets.',
+                    'button_text' => 'Découvrir les ressources',
+                )),
+            ))
         ),
     );
 

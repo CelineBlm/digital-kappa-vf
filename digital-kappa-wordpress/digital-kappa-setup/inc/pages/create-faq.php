@@ -19,51 +19,21 @@ function dk_create_faq_page() {
     }
 
     $elementor_data = array(
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'Questions fréquentes',
-                                'description' => 'Retrouvez les réponses aux questions les plus courantes sur nos produits, le paiement, les téléchargements et le support.',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'Questions fréquentes',
+                    'description' => 'Retrouvez les réponses aux questions les plus courantes sur nos produits, le paiement, les téléchargements et le support.',
+                )),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_faq_accordion',
-                            'settings' => array(
-                                'title' => '',
-                                'show_all' => 'yes',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_faq_accordion', array(
+                    'title' => '',
+                    'show_all' => 'yes',
+                )),
+            ))
         ),
     );
 

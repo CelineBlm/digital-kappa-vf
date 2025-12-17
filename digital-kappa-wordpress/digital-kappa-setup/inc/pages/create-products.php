@@ -26,73 +26,31 @@ function dk_create_products_page() {
     // Elementor data structure
     $elementor_data = array(
         // Page Header
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'Toutes nos ressources',
-                                'description' => 'Découvrez notre collection complète de templates, UI kits, icônes et ressources graphiques pour vos projets créatifs.',
-                                'show_breadcrumb' => 'yes',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'Toutes nos ressources',
+                    'description' => 'Découvrez notre collection complète de templates, UI kits, icônes et ressources graphiques pour vos projets créatifs.',
+                    'show_breadcrumb' => 'yes',
+                )),
+            ))
         ),
         // Main Content - Filters & Products
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array(
-                'structure' => '30',
-                'gap' => 'extended',
+        dk_create_section(
+            array(
+                dk_create_column(25, array(
+                    dk_create_widget('dk_product_filters', array()),
+                )),
+                dk_create_column(75, array(
+                    dk_create_widget('dk_product_listing', array(
+                        'products_per_page' => 9,
+                        'columns' => '3',
+                        'show_toolbar' => 'yes',
+                        'show_pagination' => 'yes',
+                    )),
+                )),
             ),
-            'elements' => array(
-                // Sidebar - Filters
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 25),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_filters',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
-                // Products Grid
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 75),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_listing',
-                            'settings' => array(
-                                'products_per_page' => 9,
-                                'columns' => '3',
-                                'show_toolbar' => 'yes',
-                                'show_pagination' => 'yes',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+            array('structure' => '30', 'gap' => 'extended')
         ),
     );
 

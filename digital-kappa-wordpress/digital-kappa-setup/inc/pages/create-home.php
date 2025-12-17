@@ -10,6 +10,13 @@ if (!defined('ABSPATH')) {
 }
 
 /**
+ * Generate unique Elementor ID
+ */
+function dk_generate_elementor_id() {
+    return substr(md5(uniqid(mt_rand(), true)), 0, 7);
+}
+
+/**
  * Create home page with Elementor widgets
  */
 function dk_create_home_page() {
@@ -26,197 +33,75 @@ function dk_create_home_page() {
     // Elementor data structure for home page
     $elementor_data = array(
         // Hero Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array(
-                'structure' => '10',
-                'content_width' => 'full',
-            ),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_hero_section',
-                            'settings' => array(
-                                'badge' => '✨ Ressources Premium',
-                                'title' => 'Propulsez vos projets avec des ressources numériques de qualité premium',
-                                'description' => 'Découvrez notre collection exclusive de templates, UI kits, icônes et ressources graphiques créés par des designers experts pour des projets exceptionnels.',
-                                'primary_button_text' => 'Découvrir les ressources',
-                                'secondary_button_text' => 'Comment ça marche',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_hero_section', array(
+                    'badge' => '✨ Ressources Premium',
+                    'title' => 'Propulsez vos projets avec des ressources numériques de qualité premium',
+                    'description' => 'Découvrez notre collection exclusive de templates, UI kits, icônes et ressources graphiques créés par des designers experts pour des projets exceptionnels.',
+                    'primary_button_text' => 'Découvrir les ressources',
+                    'secondary_button_text' => 'Comment ça marche',
+                )),
+            )),
+            array('structure' => '10', 'content_width' => 'full')
         ),
         // Features Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_features_section',
-                            'settings' => array(
-                                'title' => 'Pourquoi choisir nos ressources ?',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_features_section', array(
+                    'title' => 'Pourquoi choisir nos ressources ?',
+                )),
+            ))
         ),
         // Stats Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_stats_section',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_stats_section', array()),
+            ))
         ),
         // Products Grid Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_grid',
-                            'settings' => array(
-                                'title' => 'Nos ressources populaires',
-                                'products_count' => 6,
-                                'columns' => '3',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_product_grid', array(
+                    'title' => 'Nos ressources populaires',
+                    'products_count' => 6,
+                    'columns' => '3',
+                )),
+            ))
         ),
         // Process Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_process_section',
-                            'settings' => array(
-                                'title' => 'Un processus simple et rapide',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_process_section', array(
+                    'title' => 'Un processus simple et rapide',
+                )),
+            ))
         ),
         // Testimonials Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_testimonials',
-                            'settings' => array(
-                                'title' => 'Ce que disent nos clients',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_testimonials', array(
+                    'title' => 'Ce que disent nos clients',
+                )),
+            ))
         ),
         // FAQ Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_faq_accordion',
-                            'settings' => array(
-                                'title' => 'Questions fréquentes',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_faq_accordion', array(
+                    'title' => 'Questions fréquentes',
+                )),
+            ))
         ),
         // CTA Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_cta_section',
-                            'settings' => array(
-                                'title' => 'Prêt à transformer vos projets ?',
-                                'description' => 'Rejoignez des milliers de créateurs qui utilisent déjà nos ressources pour leurs projets.',
-                                'button_text' => 'Parcourir les ressources',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_cta_section', array(
+                    'title' => 'Prêt à transformer vos projets ?',
+                    'description' => 'Rejoignez des milliers de créateurs qui utilisent déjà nos ressources pour leurs projets.',
+                    'button_text' => 'Parcourir les ressources',
+                )),
+            ))
         ),
     );
 
@@ -254,8 +139,50 @@ function dk_create_home_page() {
 }
 
 /**
- * Generate unique Elementor ID
+ * Helper function to create a section
  */
-function dk_generate_elementor_id() {
-    return substr(md5(uniqid(mt_rand(), true)), 0, 8);
+function dk_create_section($columns, $extra_settings = array()) {
+    $id = dk_generate_elementor_id();
+    $settings = array_merge(array(
+        '_id' => $id,
+        'structure' => '10',
+    ), $extra_settings);
+
+    return array(
+        'id' => $id,
+        'elType' => 'section',
+        'settings' => $settings,
+        'elements' => is_array($columns) && isset($columns[0]) && isset($columns[0]['elType']) ? $columns : array($columns),
+    );
+}
+
+/**
+ * Helper function to create a column
+ */
+function dk_create_column($size, $widgets) {
+    $id = dk_generate_elementor_id();
+    return array(
+        'id' => $id,
+        'elType' => 'column',
+        'settings' => array(
+            '_id' => $id,
+            '_column_size' => $size,
+        ),
+        'elements' => $widgets,
+    );
+}
+
+/**
+ * Helper function to create a widget
+ */
+function dk_create_widget($widget_type, $settings = array()) {
+    $id = dk_generate_elementor_id();
+    $settings['_id'] = $id;
+
+    return array(
+        'id' => $id,
+        'elType' => 'widget',
+        'widgetType' => $widget_type,
+        'settings' => $settings,
+    );
 }

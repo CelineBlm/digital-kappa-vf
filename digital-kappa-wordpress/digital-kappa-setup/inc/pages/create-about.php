@@ -19,45 +19,18 @@ function dk_create_about_page() {
     }
 
     $elementor_data = array(
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'À propos de Digital Kappa',
-                                'description' => 'Découvrez notre histoire, notre mission et les valeurs qui nous animent.',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'À propos de Digital Kappa',
+                    'description' => 'Découvrez notre histoire, notre mission et les valeurs qui nous animent.',
+                )),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'text-editor',
-                            'settings' => array(
-                                'editor' => '<h2>Notre Mission</h2>
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('text-editor', array(
+                    'editor' => '<h2>Notre Mission</h2>
 <p>Digital Kappa est né de la passion pour le design et l\'innovation. Notre mission est de fournir aux créateurs, designers et développeurs les meilleures ressources numériques pour leurs projets.</p>
 
 <h2>Nos Valeurs</h2>
@@ -70,11 +43,8 @@ function dk_create_about_page() {
 
 <h2>L\'Équipe</h2>
 <p>Notre équipe est composée de designers passionnés, de développeurs expérimentés et de professionnels du support client, tous unis par la volonté de vous offrir la meilleure expérience possible.</p>',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+                )),
+            ))
         ),
     );
 

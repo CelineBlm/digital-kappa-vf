@@ -19,45 +19,18 @@ function dk_create_cgv_page() {
     }
 
     $elementor_data = array(
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'Conditions Générales de Vente',
-                                'description' => 'Dernière mise à jour : Janvier 2025',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'Conditions Générales de Vente',
+                    'description' => 'Dernière mise à jour : Janvier 2025',
+                )),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'text-editor',
-                            'settings' => array(
-                                'editor' => '<div class="legal-content">
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('text-editor', array(
+                    'editor' => '<div class="legal-content">
 <h2>1. Objet</h2>
 <p>Les présentes Conditions Générales de Vente régissent la vente de produits numériques sur le site Digital Kappa.</p>
 
@@ -85,11 +58,8 @@ function dk_create_cgv_page() {
 <h2>9. Contact</h2>
 <p>Pour toute question : contact@digital-kappa.com</p>
 </div>',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+                )),
+            ))
         ),
     );
 

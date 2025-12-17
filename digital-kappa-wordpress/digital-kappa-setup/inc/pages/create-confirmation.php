@@ -26,29 +26,14 @@ function dk_create_confirmation_page() {
     // Elementor data structure
     $elementor_data = array(
         // Order Confirmation Widget
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_order_confirmation',
-                            'settings' => array(
-                                'title' => 'Merci pour votre achat !',
-                                'subtitle' => 'Votre commande a bien été confirmée',
-                                'downloads_title' => 'Vos téléchargements',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_order_confirmation', array(
+                    'title' => 'Merci pour votre achat !',
+                    'subtitle' => 'Votre commande a bien été confirmée',
+                    'downloads_title' => 'Vos téléchargements',
+                )),
+            ))
         ),
     );
 

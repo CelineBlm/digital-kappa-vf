@@ -30,112 +30,38 @@ function dk_create_product_detail_template() {
     // Elementor data structure for product detail
     $elementor_data = array(
         // Breadcrumb
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'woocommerce-breadcrumb',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('woocommerce-breadcrumb', array()),
+            ))
         ),
         // Main Product Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '20'),
-            'elements' => array(
-                // Gallery Column
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 50),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_gallery',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
-                // Info Column
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 50),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_info',
-                            'settings' => array(),
-                        ),
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_features',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
+        dk_create_section(
+            array(
+                dk_create_column(50, array(
+                    dk_create_widget('dk_product_gallery', array()),
+                )),
+                dk_create_column(50, array(
+                    dk_create_widget('dk_product_info', array()),
+                    dk_create_widget('dk_product_features', array()),
+                )),
             ),
+            array('structure' => '20')
         ),
         // Tabs Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_tabs',
-                            'settings' => array(),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_product_tabs', array()),
+            ))
         ),
         // Related Products Section
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_product_related',
-                            'settings' => array(
-                                'title' => 'Produits similaires',
-                                'products_count' => 4,
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_product_related', array(
+                    'title' => 'Produits similaires',
+                    'products_count' => 4,
+                )),
+            ))
         ),
     );
 

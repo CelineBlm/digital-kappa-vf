@@ -19,45 +19,18 @@ function dk_create_privacy_page() {
     }
 
     $elementor_data = array(
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_page_header',
-                            'settings' => array(
-                                'title' => 'Politique de Confidentialité',
-                                'description' => 'Dernière mise à jour : Janvier 2025',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('dk_page_header', array(
+                    'title' => 'Politique de Confidentialité',
+                    'description' => 'Dernière mise à jour : Janvier 2025',
+                )),
+            ))
         ),
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'text-editor',
-                            'settings' => array(
-                                'editor' => '<div class="legal-content">
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('text-editor', array(
+                    'editor' => '<div class="legal-content">
 <h2>1. Collecte des données</h2>
 <p>Nous collectons les données personnelles que vous nous fournissez lors de votre inscription ou de vos achats : nom, prénom, adresse email, informations de facturation.</p>
 
@@ -88,11 +61,8 @@ function dk_create_privacy_page() {
 <h2>8. Contact</h2>
 <p>Pour toute question concernant vos données : privacy@digital-kappa.com</p>
 </div>',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+                )),
+            ))
         ),
     );
 

@@ -26,74 +26,32 @@ function dk_create_checkout_page() {
     // Elementor data structure
     $elementor_data = array(
         // Page Header
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array('structure' => '10'),
-            'elements' => array(
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 100),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'heading',
-                            'settings' => array(
-                                'title' => 'Finaliser votre commande',
-                                'align' => 'center',
-                                'header_size' => 'h1',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        dk_create_section(
+            dk_create_column(100, array(
+                dk_create_widget('heading', array(
+                    'title' => 'Finaliser votre commande',
+                    'align' => 'center',
+                    'header_size' => 'h1',
+                )),
+            ))
         ),
         // Checkout Form and Summary
-        array(
-            'id' => dk_generate_elementor_id(),
-            'elType' => 'section',
-            'settings' => array(
-                'structure' => '30',
-                'gap' => 'extended',
+        dk_create_section(
+            array(
+                dk_create_column(66, array(
+                    dk_create_widget('dk_checkout_form', array(
+                        'billing_title' => 'Informations de facturation',
+                        'payment_title' => 'Méthode de paiement',
+                    )),
+                )),
+                dk_create_column(33, array(
+                    dk_create_widget('dk_order_summary', array(
+                        'title' => 'Votre commande',
+                        'button_text' => 'Confirmer et payer',
+                    )),
+                )),
             ),
-            'elements' => array(
-                // Checkout Form
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 66),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_checkout_form',
-                            'settings' => array(
-                                'billing_title' => 'Informations de facturation',
-                                'payment_title' => 'Méthode de paiement',
-                            ),
-                        ),
-                    ),
-                ),
-                // Order Summary
-                array(
-                    'id' => dk_generate_elementor_id(),
-                    'elType' => 'column',
-                    'settings' => array('_column_size' => 33),
-                    'elements' => array(
-                        array(
-                            'id' => dk_generate_elementor_id(),
-                            'elType' => 'widget',
-                            'widgetType' => 'dk_order_summary',
-                            'settings' => array(
-                                'title' => 'Votre commande',
-                                'button_text' => 'Confirmer et payer',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+            array('structure' => '30', 'gap' => 'extended')
         ),
     );
 

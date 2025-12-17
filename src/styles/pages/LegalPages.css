@@ -1,0 +1,224 @@
+/* ============================================
+   LEGAL PAGES - Digital Kappa
+   About, Terms of Sale, Privacy Policy
+   ============================================ */
+
+.legal-page {
+  @apply min-h-screen bg-white;
+}
+
+/* Page Header */
+.legal-page-header {
+  @apply bg-gray-50 py-12 lg:py-16 px-4 lg:px-20;
+}
+
+.legal-page-header .breadcrumb {
+  @apply flex items-center gap-2 text-sm text-[#4a5565] mb-6;
+}
+
+.legal-page-header .breadcrumb a {
+  @apply hover:text-[#d2a30b] transition-colors;
+}
+
+.legal-page-header h1 {
+  @apply text-[#1a1a1a];
+}
+
+.legal-page-header .last-updated {
+  @apply text-sm text-[#4a5565] mt-4;
+}
+
+/* Content Section */
+.legal-page-content {
+  @apply py-12 px-4 lg:px-20;
+}
+
+.legal-page-content .container-dk {
+  @apply max-w-4xl mx-auto;
+}
+
+.legal-content {
+  @apply max-w-none;
+}
+
+/* Typography Styles */
+.legal-content h2 {
+  font-family: var(--dk-font-heading);
+  @apply text-[#1a1a1a] mt-12 mb-6 first:mt-0;
+  @apply text-2xl font-medium;
+  @apply pb-3 border-b border-gray-200;
+}
+
+.legal-content h3 {
+  font-family: var(--dk-font-heading);
+  @apply text-[#1a1a1a] mt-8 mb-4;
+  @apply text-xl font-medium;
+}
+
+.legal-content h4 {
+  font-family: var(--dk-font-heading);
+  @apply text-[#1a1a1a] mt-6 mb-3;
+  @apply text-lg font-medium;
+}
+
+.legal-content p {
+  @apply text-[#4a5565] mb-4 leading-relaxed;
+}
+
+.legal-content strong {
+  @apply text-[#1a1a1a] font-medium;
+}
+
+.legal-content em {
+  @apply italic;
+}
+
+/* Lists */
+.legal-content ul,
+.legal-content ol {
+  @apply mb-6 space-y-2 text-[#4a5565];
+}
+
+.legal-content ul {
+  @apply list-disc list-inside pl-4;
+}
+
+.legal-content ol {
+  @apply list-decimal list-inside pl-4;
+}
+
+.legal-content li {
+  @apply leading-relaxed;
+}
+
+.legal-content li ul,
+.legal-content li ol {
+  @apply mt-2 ml-6;
+}
+
+/* Links */
+.legal-content a {
+  @apply text-[#d2a30b] hover:underline;
+  @apply transition-colors duration-200;
+}
+
+/* Tables */
+.legal-content table {
+  @apply w-full mb-6 border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.legal-content thead {
+  @apply bg-gray-50;
+}
+
+.legal-content th {
+  @apply px-4 py-3 text-left font-medium text-[#1a1a1a] border-b border-gray-200;
+}
+
+.legal-content td {
+  @apply px-4 py-3 text-[#4a5565] border-b border-gray-200;
+}
+
+.legal-content tr:last-child td {
+  @apply border-b-0;
+}
+
+/* Blockquotes */
+.legal-content blockquote {
+  @apply border-l-4 border-[#d2a30b] pl-6 py-2 my-6;
+  @apply bg-gray-50 rounded-r-lg;
+  @apply italic text-[#4a5565];
+}
+
+/* Code blocks */
+.legal-content code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm;
+  @apply text-[#1a1a1a] font-mono;
+}
+
+.legal-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-6;
+}
+
+.legal-content pre code {
+  @apply bg-transparent p-0;
+}
+
+/* Dividers */
+.legal-content hr {
+  @apply border-t border-gray-200 my-8;
+}
+
+/* Info boxes */
+.legal-info-box {
+  @apply bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6;
+}
+
+.legal-info-box h4 {
+  @apply text-blue-900 mb-2;
+}
+
+.legal-info-box p {
+  @apply text-blue-800;
+}
+
+.legal-warning-box {
+  @apply bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-6;
+}
+
+.legal-warning-box h4 {
+  @apply text-yellow-900 mb-2;
+}
+
+.legal-warning-box p {
+  @apply text-yellow-800;
+}
+
+/* Table of Contents */
+.legal-toc {
+  @apply bg-gray-50 rounded-xl p-6 mb-8;
+}
+
+.legal-toc h3 {
+  @apply text-xl font-medium mb-4 text-[#1a1a1a];
+}
+
+.legal-toc ul {
+  @apply space-y-2;
+}
+
+.legal-toc a {
+  @apply text-[#4a5565] hover:text-[#d2a30b];
+  @apply transition-colors duration-200;
+}
+
+/* Contact Section */
+.legal-contact-section {
+  @apply mt-12 pt-12 border-t-2 border-gray-200;
+  @apply bg-gray-50 rounded-2xl p-8;
+}
+
+.legal-contact-section h2 {
+  @apply text-2xl font-medium mb-6 text-[#1a1a1a];
+  @apply border-b-0 pb-0;
+}
+
+.legal-contact-info {
+  @apply space-y-4;
+}
+
+.legal-contact-item {
+  @apply flex items-start gap-3;
+}
+
+.legal-contact-item svg {
+  @apply w-5 h-5 text-[#d2a30b] flex-shrink-0 mt-0.5;
+}
+
+.legal-contact-item p {
+  @apply text-[#4a5565] mb-0;
+}
+
+.legal-contact-item a {
+  @apply text-[#d2a30b] font-medium;
+}

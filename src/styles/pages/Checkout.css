@@ -1,0 +1,223 @@
+/* ============================================
+   CHECKOUT PAGE - Digital Kappa
+   ============================================ */
+
+.checkout-page {
+  @apply min-h-screen bg-gray-50;
+}
+
+/* Page Header */
+.checkout-header {
+  @apply bg-white py-6 px-4 lg:px-20 border-b border-gray-200;
+}
+
+.checkout-header h1 {
+  @apply text-center text-[#1a1a1a];
+}
+
+/* Main Layout */
+.checkout-main {
+  @apply py-8 lg:py-12 px-4 lg:px-20;
+}
+
+.checkout-main .container-dk {
+  @apply grid lg:grid-cols-3 gap-8;
+}
+
+/* Checkout Form */
+.checkout-form-section {
+  @apply lg:col-span-2 space-y-8;
+}
+
+.checkout-section {
+  @apply bg-white rounded-xl p-6 lg:p-8 shadow-sm;
+}
+
+.checkout-section h2 {
+  @apply text-2xl mb-6 pb-4 border-b border-gray-200;
+}
+
+.checkout-form-grid {
+  @apply grid md:grid-cols-2 gap-6;
+}
+
+.checkout-form-field {
+  @apply space-y-2;
+}
+
+.checkout-form-field.full-width {
+  @apply md:col-span-2;
+}
+
+.checkout-form-field label {
+  @apply block text-[#1a1a1a] font-medium;
+}
+
+.checkout-form-field input,
+.checkout-form-field select,
+.checkout-form-field textarea {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#d2a30b] focus:border-transparent;
+}
+
+.checkout-form-field textarea {
+  @apply resize-none;
+}
+
+.checkout-form-field .error-message {
+  @apply text-sm text-red-600;
+}
+
+.checkout-form-field .helper-text {
+  @apply text-sm text-[#4a5565];
+}
+
+/* Payment Section */
+.payment-methods {
+  @apply space-y-4;
+}
+
+.payment-method {
+  @apply flex items-center gap-4 p-4 border-2 border-gray-200 rounded-lg;
+  @apply cursor-pointer transition-all;
+}
+
+.payment-method.selected {
+  @apply border-[#d2a30b] bg-[#fffbf0];
+}
+
+.payment-method input[type="radio"] {
+  @apply w-5 h-5 text-[#d2a30b] border-gray-300;
+  @apply focus:ring-[#d2a30b];
+}
+
+.payment-method-info {
+  @apply flex-1;
+}
+
+.payment-method-title {
+  @apply font-medium text-[#1a1a1a];
+}
+
+.payment-method-description {
+  @apply text-sm text-[#4a5565];
+}
+
+.payment-method-logos {
+  @apply flex gap-2;
+}
+
+.payment-method-logos img {
+  @apply h-6;
+}
+
+.payment-badges {
+  @apply flex flex-wrap gap-3 mt-4;
+}
+
+.payment-badge {
+  @apply flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg text-sm;
+}
+
+.payment-badge svg {
+  @apply w-4 h-4 text-[#10b981];
+}
+
+/* Order Summary */
+.checkout-summary {
+  @apply lg:col-span-1;
+}
+
+.order-summary-card {
+  @apply bg-white rounded-xl p-6 shadow-sm sticky top-24;
+}
+
+.order-summary-card h2 {
+  @apply text-2xl mb-6 pb-4 border-b border-gray-200;
+}
+
+.order-product {
+  @apply flex gap-4 pb-6 border-b border-gray-200;
+}
+
+.order-product-image {
+  @apply w-20 h-20 rounded-lg overflow-hidden bg-gray-100;
+}
+
+.order-product-image img {
+  @apply w-full h-full object-cover;
+}
+
+.order-product-info {
+  @apply flex-1;
+}
+
+.order-product-title {
+  @apply font-medium text-[#1a1a1a] mb-1;
+}
+
+.order-product-category {
+  @apply text-sm text-[#4a5565];
+}
+
+.order-product-price {
+  font-family: var(--dk-font-heading);
+  @apply text-xl text-[#d2a30b] font-medium;
+}
+
+.order-summary-details {
+  @apply space-y-4 py-6 border-b border-gray-200;
+}
+
+.order-summary-row {
+  @apply flex items-center justify-between;
+}
+
+.order-summary-label {
+  @apply text-[#4a5565];
+}
+
+.order-summary-value {
+  @apply text-[#1a1a1a] font-medium;
+}
+
+.order-summary-total {
+  @apply flex items-center justify-between pt-6;
+  @apply text-xl font-medium;
+}
+
+.order-summary-total .total-amount {
+  font-family: var(--dk-font-heading);
+  @apply text-3xl text-[#d2a30b];
+}
+
+.order-benefits {
+  @apply space-y-3 mt-6 py-6 border-t border-gray-200;
+}
+
+.order-benefit {
+  @apply flex items-center gap-3;
+}
+
+.order-benefit svg {
+  @apply w-5 h-5 text-[#d2a30b] flex-shrink-0;
+}
+
+.order-benefit span {
+  @apply text-sm text-[#4a5565];
+}
+
+.checkout-submit-button {
+  @apply w-full bg-[#d2a30b] text-white px-6 py-4 rounded-lg;
+  @apply hover:bg-[#b8900a] transition-colors;
+  @apply font-medium text-lg;
+  @apply flex items-center justify-center gap-2;
+}
+
+.checkout-security-note {
+  @apply text-center text-sm text-[#4a5565] mt-4;
+}
+
+.checkout-security-note svg {
+  @apply inline w-4 h-4 text-[#10b981];
+}

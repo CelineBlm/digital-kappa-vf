@@ -1,0 +1,206 @@
+/* ============================================
+   ALL PRODUCTS PAGE - Digital Kappa
+   ============================================ */
+
+.all-products-page {
+  @apply min-h-screen bg-white;
+}
+
+/* Page Header */
+.products-page-header {
+  @apply bg-gray-50 py-12 px-4 lg:px-20;
+}
+
+.products-page-header .container-dk {
+  @apply space-y-4;
+}
+
+.products-page-header .breadcrumb {
+  @apply flex items-center gap-2 text-sm text-[#4a5565];
+}
+
+.products-page-header .breadcrumb a {
+  @apply hover:text-[#d2a30b] transition-colors;
+}
+
+.products-page-header h1 {
+  @apply text-[#1a1a1a];
+}
+
+.products-page-header .page-description {
+  @apply text-[#4a5565] text-lg max-w-3xl;
+}
+
+/* Main Layout */
+.products-main-layout {
+  @apply py-8 px-4 lg:px-20;
+}
+
+.products-main-layout .container-dk {
+  @apply grid lg:grid-cols-4 gap-8;
+}
+
+/* Sidebar Filters */
+.products-sidebar {
+  @apply lg:col-span-1 space-y-6;
+}
+
+.filter-section {
+  @apply bg-white rounded-xl border border-gray-100 p-6;
+}
+
+.filter-section h3 {
+  @apply text-lg font-medium mb-4 text-[#1a1a1a];
+}
+
+.filter-section .filter-options {
+  @apply space-y-3;
+}
+
+.filter-option {
+  @apply flex items-center gap-3;
+}
+
+.filter-option input[type="checkbox"] {
+  @apply w-4 h-4 text-[#d2a30b] border-gray-300 rounded;
+  @apply focus:ring-[#d2a30b] focus:ring-2;
+}
+
+.filter-option label {
+  @apply text-[#4a5565] cursor-pointer flex-1;
+}
+
+.filter-option .count {
+  @apply text-sm text-[#9ca3af];
+}
+
+/* Price Range Filter */
+.price-filter-inputs {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.price-filter-inputs input {
+  @apply px-3 py-2 border border-gray-200 rounded-lg text-sm;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#d2a30b];
+}
+
+/* Rating Filter */
+.rating-filter-option {
+  @apply flex items-center gap-2;
+}
+
+.rating-filter-option .stars {
+  @apply flex gap-0.5;
+}
+
+.rating-filter-option .stars svg {
+  @apply w-4 h-4 text-[#d2a30b];
+}
+
+/* Reset Button */
+.filter-reset-button {
+  @apply w-full mt-6 px-4 py-2 border border-[#d2a30b] text-[#d2a30b] rounded-lg;
+  @apply hover:bg-[#fffbf0] transition-colors;
+  @apply font-medium;
+}
+
+/* Products Content */
+.products-content {
+  @apply lg:col-span-3 space-y-6;
+}
+
+/* Toolbar */
+.products-toolbar {
+  @apply flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4;
+  @apply pb-6 border-b border-gray-200;
+}
+
+.products-toolbar .results-count {
+  @apply text-[#4a5565];
+}
+
+.products-toolbar .toolbar-right {
+  @apply flex items-center gap-4;
+}
+
+.products-toolbar .sort-select {
+  @apply px-4 py-2 border border-gray-200 rounded-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#d2a30b];
+}
+
+.products-toolbar .view-toggle {
+  @apply flex gap-2;
+}
+
+.products-toolbar .view-button {
+  @apply p-2 border border-gray-200 rounded-lg;
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.products-toolbar .view-button.active {
+  @apply bg-[#d2a30b] text-white border-[#d2a30b];
+}
+
+/* Products Grid */
+.products-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Pagination */
+.products-pagination {
+  @apply flex items-center justify-center gap-2 mt-8;
+}
+
+.products-pagination button {
+  @apply px-4 py-2 border border-gray-200 rounded-lg;
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.products-pagination button.active {
+  @apply bg-[#d2a30b] text-white border-[#d2a30b];
+}
+
+.products-pagination button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Empty State */
+.products-empty-state {
+  @apply text-center py-16;
+}
+
+.products-empty-state svg {
+  @apply w-16 h-16 mx-auto mb-4 text-gray-300;
+}
+
+.products-empty-state h3 {
+  @apply text-xl text-[#1a1a1a] mb-2;
+}
+
+.products-empty-state p {
+  @apply text-[#4a5565] mb-6;
+}
+
+/* Mobile Filters */
+.mobile-filters-button {
+  @apply lg:hidden fixed bottom-6 right-6 z-40;
+  @apply bg-[#d2a30b] text-white px-6 py-3 rounded-full shadow-lg;
+  @apply flex items-center gap-2 font-medium;
+}
+
+.mobile-filters-overlay {
+  @apply lg:hidden fixed inset-0 bg-black/50 z-50;
+}
+
+.mobile-filters-panel {
+  @apply lg:hidden fixed inset-y-0 right-0 w-80 bg-white z-50;
+  @apply overflow-y-auto p-6 space-y-6;
+}
+
+.mobile-filters-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.mobile-filters-close {
+  @apply p-2 hover:bg-gray-100 rounded-lg;
+}

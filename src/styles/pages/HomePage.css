@@ -1,0 +1,240 @@
+/* ============================================
+   HOME PAGE - Digital Kappa
+   ============================================ */
+
+/* Hero Section */
+.hero-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-white;
+}
+
+.hero-section-dk .container-dk {
+  @apply grid lg:grid-cols-2 gap-12 items-center;
+}
+
+.hero-section-dk .hero-content {
+  @apply space-y-6;
+}
+
+.hero-section-dk .hero-badge {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full;
+  @apply bg-[#fffbf0] text-[#d2a30b] text-sm font-medium;
+}
+
+.hero-section-dk h1 {
+  @apply text-[#0d1421] leading-tight;
+}
+
+.hero-section-dk .hero-description {
+  @apply text-[#4a5565] text-lg;
+}
+
+.hero-section-dk .hero-buttons {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.hero-section-dk .hero-image-grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.hero-section-dk .hero-image-card {
+  @apply bg-white rounded-2xl p-4 shadow-lg border border-gray-100;
+  @apply hover:shadow-xl transition-all duration-300;
+}
+
+/* Features Section */
+.features-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-gray-50;
+}
+
+.features-section-dk .section-header {
+  @apply text-center mb-12;
+}
+
+.features-section-dk .features-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.features-section-dk .feature-card {
+  @apply bg-white border border-gray-100 rounded-2xl p-8 text-center;
+  @apply hover:border-[#d2a30b] transition-all duration-300;
+}
+
+.features-section-dk .feature-icon {
+  @apply w-12 h-12 mx-auto mb-4 text-[#10b981];
+}
+
+.features-section-dk .feature-title {
+  @apply text-xl font-medium mb-2 text-[#1a1a1a];
+}
+
+.features-section-dk .feature-description {
+  @apply text-[#4a5565];
+}
+
+/* Stats Section */
+.stats-section-dk {
+  @apply py-12 lg:py-16 px-4 lg:px-20;
+  @apply bg-white;
+}
+
+.stats-section-dk .stats-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8 text-center;
+}
+
+.stats-section-dk .stat-number {
+  font-family: var(--dk-font-heading);
+  @apply text-5xl text-[#d2a30b] font-medium mb-2;
+}
+
+.stats-section-dk .stat-label {
+  @apply text-[#4a5565] text-lg;
+}
+
+/* Products Section */
+.products-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-gray-50;
+}
+
+.products-section-dk .section-header {
+  @apply text-center mb-12;
+}
+
+.products-section-dk .products-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8;
+}
+
+/* Process Section */
+.process-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-white;
+}
+
+.process-section-dk .section-header {
+  @apply text-center mb-12;
+}
+
+.process-section-dk .process-steps {
+  @apply space-y-8 max-w-3xl mx-auto;
+}
+
+.process-section-dk .process-step {
+  @apply flex gap-6 items-start;
+}
+
+.process-section-dk .step-number {
+  @apply flex-shrink-0 w-12 h-12 rounded-full bg-[#d2a30b] text-white;
+  @apply flex items-center justify-center font-medium text-lg;
+}
+
+.process-section-dk .step-content h3 {
+  @apply text-xl mb-2;
+}
+
+.process-section-dk .step-content p {
+  @apply text-[#4a5565];
+}
+
+/* Testimonials Section */
+.testimonials-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-gray-50;
+}
+
+.testimonials-section-dk .section-header {
+  @apply text-center mb-12;
+}
+
+.testimonials-section-dk .testimonials-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.testimonials-section-dk .testimonial-card {
+  @apply bg-white rounded-2xl p-8 shadow-lg;
+}
+
+.testimonials-section-dk .testimonial-header {
+  @apply flex items-center gap-4 mb-4;
+}
+
+.testimonials-section-dk .testimonial-avatar {
+  @apply w-12 h-12 rounded-full object-cover;
+}
+
+.testimonials-section-dk .testimonial-author {
+  @apply font-medium text-[#1a1a1a];
+}
+
+.testimonials-section-dk .testimonial-role {
+  @apply text-sm text-[#4a5565];
+}
+
+.testimonials-section-dk .testimonial-rating {
+  @apply flex gap-0.5 mb-4;
+}
+
+.testimonials-section-dk .testimonial-text {
+  @apply text-[#4a5565] italic;
+}
+
+/* FAQ Section */
+.faq-section-dk {
+  @apply py-12 lg:py-20 px-4 lg:px-20;
+  @apply bg-white;
+}
+
+.faq-section-dk .section-header {
+  @apply text-center mb-12;
+}
+
+.faq-section-dk .faq-container {
+  @apply max-w-3xl mx-auto space-y-4;
+}
+
+.faq-section-dk .faq-item {
+  @apply bg-white border border-gray-200 rounded-xl overflow-hidden;
+}
+
+.faq-section-dk .faq-question {
+  @apply w-full flex items-center justify-between p-6;
+  @apply text-left font-medium text-[#1a1a1a];
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.faq-section-dk .faq-answer {
+  @apply px-6 pb-6 text-[#4a5565];
+}
+
+/* CTA Section */
+.cta-section-dk {
+  @apply py-16 lg:py-24 px-4 lg:px-20;
+  @apply bg-[#2b2d31];
+}
+
+.cta-section-dk .container-dk {
+  @apply text-center space-y-6;
+}
+
+.cta-section-dk h2 {
+  @apply text-white;
+}
+
+.cta-section-dk p {
+  @apply text-white/80 text-lg max-w-2xl mx-auto;
+}
+
+.cta-section-dk .cta-button {
+  @apply inline-block bg-white text-[#d2a30b] border-2 border-white px-8 py-3 rounded-lg;
+  @apply hover:bg-transparent hover:text-white transition-all duration-200;
+  @apply font-medium;
+}
+
+.cta-section-dk .cta-features {
+  @apply flex flex-wrap justify-center gap-6 mt-8;
+}
+
+.cta-section-dk .cta-feature {
+  @apply flex items-center gap-2 text-white/90;
+}

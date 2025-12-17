@@ -1,0 +1,263 @@
+/* ============================================
+   ORDER CONFIRMATION PAGE - Digital Kappa
+   ============================================ */
+
+.order-confirmation-page {
+  @apply min-h-screen bg-gray-50;
+}
+
+/* Header Section */
+.confirmation-header {
+  @apply bg-white py-12 px-4 lg:px-20 text-center border-b border-gray-200;
+}
+
+.confirmation-icon {
+  @apply w-20 h-20 mx-auto mb-6 text-[#10b981];
+}
+
+.confirmation-header h1 {
+  @apply text-[#1a1a1a] mb-4;
+}
+
+.confirmation-badge {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full;
+  @apply bg-[#fffbf0] text-[#d2a30b] font-medium;
+}
+
+/* Main Content */
+.confirmation-main {
+  @apply py-8 lg:py-12 px-4 lg:px-20;
+}
+
+.confirmation-main .container-dk {
+  @apply grid lg:grid-cols-3 gap-8;
+}
+
+/* Left Column */
+.confirmation-content {
+  @apply lg:col-span-2 space-y-6;
+}
+
+.confirmation-card {
+  @apply bg-white rounded-xl p-6 lg:p-8 shadow-sm;
+}
+
+.confirmation-card h2 {
+  @apply text-2xl mb-4 pb-4 border-b border-gray-200;
+}
+
+/* Email Sent */
+.email-sent-info {
+  @apply flex items-start gap-4 p-4 bg-blue-50 border border-blue-200 rounded-lg;
+}
+
+.email-sent-info svg {
+  @apply w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5;
+}
+
+.email-sent-text {
+  @apply flex-1;
+}
+
+.email-sent-text h3 {
+  @apply font-medium text-[#1a1a1a] mb-1;
+}
+
+.email-sent-text p {
+  @apply text-[#4a5565] text-sm;
+}
+
+.email-address {
+  @apply font-medium text-blue-600;
+}
+
+/* Order Products */
+.order-products-list {
+  @apply space-y-4;
+}
+
+.order-product-item {
+  @apply flex items-center gap-4 p-4 bg-gray-50 rounded-lg;
+}
+
+.order-product-image {
+  @apply w-20 h-20 rounded-lg overflow-hidden bg-white;
+}
+
+.order-product-image img {
+  @apply w-full h-full object-cover;
+}
+
+.order-product-details {
+  @apply flex-1;
+}
+
+.order-product-title {
+  @apply font-medium text-[#1a1a1a] mb-1;
+}
+
+.order-product-category {
+  @apply text-sm text-[#4a5565];
+}
+
+.order-product-download {
+  @apply bg-[#d2a30b] text-white px-4 py-2 rounded-lg;
+  @apply hover:bg-[#b8900a] transition-colors;
+  @apply font-medium text-sm flex items-center gap-2;
+}
+
+.order-product-download svg {
+  @apply w-4 h-4;
+}
+
+/* Next Steps */
+.next-steps {
+  @apply space-y-6;
+}
+
+.next-step {
+  @apply flex gap-4;
+}
+
+.step-number {
+  @apply flex-shrink-0 w-10 h-10 rounded-full bg-[#d2a30b] text-white;
+  @apply flex items-center justify-center font-medium;
+}
+
+.step-content h3 {
+  @apply font-medium text-[#1a1a1a] mb-2;
+}
+
+.step-content p {
+  @apply text-[#4a5565];
+}
+
+/* Right Sidebar */
+.confirmation-sidebar {
+  @apply lg:col-span-1 space-y-6;
+}
+
+/* Order Summary */
+.order-summary-recap {
+  @apply bg-white rounded-xl p-6 shadow-sm;
+}
+
+.order-summary-recap h3 {
+  @apply text-xl font-medium mb-4 pb-4 border-b border-gray-200;
+}
+
+.order-summary-rows {
+  @apply space-y-3;
+}
+
+.summary-row {
+  @apply flex items-center justify-between;
+}
+
+.summary-label {
+  @apply text-[#4a5565];
+}
+
+.summary-value {
+  @apply text-[#1a1a1a] font-medium;
+}
+
+.summary-total {
+  @apply flex items-center justify-between pt-4 border-t border-gray-200;
+  @apply text-lg font-medium;
+}
+
+.summary-total .total-amount {
+  font-family: var(--dk-font-heading);
+  @apply text-2xl text-[#d2a30b];
+}
+
+/* Support Card */
+.support-card {
+  @apply bg-white rounded-xl p-6 shadow-sm;
+}
+
+.support-card h3 {
+  @apply text-xl font-medium mb-4;
+}
+
+.support-info {
+  @apply space-y-3;
+}
+
+.support-item {
+  @apply flex items-start gap-3;
+}
+
+.support-item svg {
+  @apply w-5 h-5 text-[#d2a30b] flex-shrink-0 mt-0.5;
+}
+
+.support-item-content {
+  @apply flex-1;
+}
+
+.support-label {
+  @apply text-sm text-[#4a5565] mb-1;
+}
+
+.support-value {
+  @apply text-[#1a1a1a] font-medium;
+}
+
+.support-button {
+  @apply w-full mt-4 bg-[#d2a30b] text-white px-6 py-3 rounded-lg;
+  @apply hover:bg-[#b8900a] transition-colors;
+  @apply font-medium flex items-center justify-center gap-2;
+}
+
+/* Guarantees Card */
+.guarantees-card {
+  @apply bg-white rounded-xl p-6 shadow-sm;
+}
+
+.guarantees-card h3 {
+  @apply text-xl font-medium mb-4;
+}
+
+.guarantees-list {
+  @apply space-y-3;
+}
+
+.guarantee-item {
+  @apply flex items-start gap-3;
+}
+
+.guarantee-item svg {
+  @apply w-5 h-5 text-[#10b981] flex-shrink-0 mt-0.5;
+}
+
+.guarantee-text {
+  @apply text-sm text-[#4a5565];
+}
+
+/* Back to Home Button */
+.back-to-home-button {
+  @apply w-full mt-4 bg-white text-[#d2a30b] border-2 border-[#d2a30b] px-6 py-3 rounded-lg;
+  @apply hover:bg-[#fffbf0] transition-colors;
+  @apply font-medium flex items-center justify-center gap-2;
+}
+
+/* Final CTA */
+.confirmation-cta {
+  @apply mt-8 bg-[#2b2d31] rounded-2xl p-8 text-center;
+}
+
+.confirmation-cta h3 {
+  @apply text-2xl text-white mb-4;
+}
+
+.confirmation-cta p {
+  @apply text-white/80 mb-6;
+}
+
+.confirmation-cta button {
+  @apply bg-white text-[#d2a30b] px-8 py-3 rounded-lg;
+  @apply hover:bg-gray-100 transition-colors;
+  @apply font-medium;
+}

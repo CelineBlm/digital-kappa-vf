@@ -1,0 +1,202 @@
+/* ============================================
+   FAQ PAGE - Digital Kappa
+   ============================================ */
+
+.faq-page {
+  @apply min-h-screen bg-white;
+}
+
+/* Page Header */
+.faq-page-header {
+  @apply bg-gray-50 py-12 lg:py-16 px-4 lg:px-20 text-center;
+}
+
+.faq-page-header .breadcrumb {
+  @apply flex items-center justify-center gap-2 text-sm text-[#4a5565] mb-6;
+}
+
+.faq-page-header .breadcrumb a {
+  @apply hover:text-[#d2a30b] transition-colors;
+}
+
+.faq-page-header h1 {
+  @apply text-[#1a1a1a] mb-4;
+}
+
+.faq-page-header .page-description {
+  @apply text-[#4a5565] text-lg max-w-3xl mx-auto;
+}
+
+/* Search Section */
+.faq-search-section {
+  @apply py-8 px-4 lg:px-20;
+}
+
+.faq-search-container {
+  @apply max-w-2xl mx-auto relative;
+}
+
+.faq-search-input {
+  @apply w-full px-6 py-4 pl-12 rounded-xl border-2 border-gray-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#d2a30b] focus:border-transparent;
+  @apply text-lg;
+}
+
+.faq-search-icon {
+  @apply absolute left-4 top-1/2 transform -translate-y-1/2;
+  @apply text-gray-400 w-6 h-6;
+}
+
+/* FAQ Categories */
+.faq-categories {
+  @apply flex flex-wrap justify-center gap-3 mt-6;
+}
+
+.faq-category-button {
+  @apply px-4 py-2 rounded-full border-2 border-gray-200;
+  @apply hover:border-[#d2a30b] hover:text-[#d2a30b] transition-all;
+  @apply font-medium;
+}
+
+.faq-category-button.active {
+  @apply bg-[#d2a30b] text-white border-[#d2a30b];
+}
+
+/* FAQ Content */
+.faq-content {
+  @apply py-12 px-4 lg:px-20;
+}
+
+.faq-content .container-dk {
+  @apply max-w-4xl mx-auto;
+}
+
+/* FAQ Sections */
+.faq-sections {
+  @apply space-y-12;
+}
+
+.faq-section {
+  @apply space-y-4;
+}
+
+.faq-section h2 {
+  @apply text-2xl font-medium mb-6 text-[#1a1a1a];
+  @apply pb-4 border-b-2 border-[#d2a30b];
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  @apply space-y-4;
+}
+
+.faq-accordion-item {
+  @apply bg-white border border-gray-200 rounded-xl overflow-hidden;
+  @apply hover:border-[#d2a30b] transition-all;
+}
+
+.faq-accordion-item.open {
+  @apply border-[#d2a30b];
+}
+
+.faq-question-button {
+  @apply w-full flex items-center justify-between p-6;
+  @apply text-left font-medium text-[#1a1a1a];
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.faq-question-text {
+  @apply flex-1 pr-4;
+}
+
+.faq-toggle-icon {
+  @apply w-6 h-6 text-[#d2a30b] flex-shrink-0 transition-transform;
+}
+
+.faq-accordion-item.open .faq-toggle-icon {
+  @apply transform rotate-180;
+}
+
+.faq-answer {
+  @apply px-6 pb-6 text-[#4a5565] leading-relaxed;
+}
+
+.faq-answer p {
+  @apply mb-4 last:mb-0;
+}
+
+.faq-answer ul {
+  @apply list-disc list-inside space-y-2 ml-4;
+}
+
+.faq-answer a {
+  @apply text-[#d2a30b] hover:underline;
+}
+
+/* Still Need Help Section */
+.faq-help-section {
+  @apply py-12 lg:py-16 px-4 lg:px-20 bg-gray-50;
+}
+
+.faq-help-card {
+  @apply max-w-3xl mx-auto bg-white rounded-2xl p-8 lg:p-12 text-center shadow-lg;
+}
+
+.faq-help-icon {
+  @apply w-16 h-16 mx-auto mb-6 text-[#d2a30b];
+}
+
+.faq-help-card h2 {
+  @apply text-2xl font-medium mb-4 text-[#1a1a1a];
+}
+
+.faq-help-card p {
+  @apply text-[#4a5565] text-lg mb-8;
+}
+
+.faq-help-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+
+.faq-contact-button {
+  @apply bg-[#d2a30b] text-white px-8 py-3 rounded-lg;
+  @apply hover:bg-[#b8900a] transition-colors;
+  @apply font-medium flex items-center justify-center gap-2;
+}
+
+.faq-browse-button {
+  @apply bg-white text-[#d2a30b] border-2 border-[#d2a30b] px-8 py-3 rounded-lg;
+  @apply hover:bg-[#fffbf0] transition-colors;
+  @apply font-medium flex items-center justify-center gap-2;
+}
+
+/* Quick Links */
+.faq-quick-links {
+  @apply py-12 px-4 lg:px-20 bg-white;
+}
+
+.faq-quick-links h3 {
+  @apply text-center text-2xl font-medium mb-8 text-[#1a1a1a];
+}
+
+.quick-links-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto;
+}
+
+.quick-link-card {
+  @apply bg-gray-50 rounded-xl p-6 text-center;
+  @apply hover:bg-[#fffbf0] hover:border-[#d2a30b] border-2 border-transparent;
+  @apply transition-all cursor-pointer;
+}
+
+.quick-link-icon {
+  @apply w-12 h-12 mx-auto mb-4 text-[#d2a30b];
+}
+
+.quick-link-card h4 {
+  @apply font-medium mb-2 text-[#1a1a1a];
+}
+
+.quick-link-card p {
+  @apply text-sm text-[#4a5565];
+}

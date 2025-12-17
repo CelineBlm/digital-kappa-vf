@@ -1,0 +1,54 @@
+/* ============================================
+   FOOTER - Digital Kappa
+   ============================================ */
+
+.footer-dk {
+  @apply bg-[#1a1a1a] text-white py-12 lg:py-16 px-4 lg:px-20;
+}
+
+.footer-dk .container-dk {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12;
+}
+
+/* Logo et description */
+.footer-dk .footer-logo-section {
+  @apply space-y-4;
+}
+
+.footer-dk .footer-logo {
+  @apply flex items-center gap-3;
+}
+
+.footer-dk .footer-logo svg {
+  filter: brightness(0) invert(1); /* Blanc */
+}
+
+.footer-dk .footer-logo-text {
+  font-family: var(--dk-font-heading);
+  @apply text-xl font-medium;
+}
+
+.footer-dk .footer-description {
+  @apply text-white/70 text-sm;
+}
+
+/* Colonnes de liens */
+.footer-dk .footer-column h4 {
+  @apply text-white font-medium mb-4 text-base;
+  font-family: var(--dk-font-body);
+}
+
+.footer-dk .footer-column ul {
+  @apply space-y-2;
+}
+
+.footer-dk .footer-column a {
+  @apply text-white/70 hover:text-white transition-colors duration-200 text-sm;
+  @apply block;
+}
+
+/* Copyright */
+.footer-dk .footer-bottom {
+  @apply border-t border-white/10 mt-12 pt-8;
+  @apply text-center text-white/50 text-sm;
+}

@@ -1,0 +1,79 @@
+/* ============================================
+   PRODUCT CARD - Digital Kappa
+   ============================================ */
+
+.card-dk-product {
+  @apply bg-white rounded-2xl border border-[#f0f2f5] shadow-lg overflow-hidden;
+  @apply hover:shadow-xl transition-all duration-300 hover:scale-[1.02];
+  @apply cursor-pointer;
+}
+
+/* Image du produit */
+.card-dk-product .product-image-container {
+  @apply relative aspect-[4/3] overflow-hidden;
+}
+
+.card-dk-product .product-image {
+  @apply w-full h-full object-cover;
+}
+
+.card-dk-product .product-badge {
+  @apply absolute top-4 right-4 bg-[#d2a30b] text-white text-xs px-2.5 py-1 rounded-lg;
+  font-family: var(--dk-font-body);
+}
+
+/* Contenu du produit */
+.card-dk-product .product-content {
+  @apply p-6 space-y-3;
+}
+
+.card-dk-product .product-category {
+  @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+  @apply bg-[#fffbf0] text-[#d2a30b] text-sm;
+  font-family: var(--dk-font-body);
+}
+
+.card-dk-product .product-title {
+  font-family: var(--dk-font-heading);
+  @apply text-xl text-[#1a1a1a] font-medium;
+  @apply line-clamp-2;
+}
+
+.card-dk-product .product-description {
+  @apply text-[#4a5565] text-sm;
+  @apply line-clamp-2;
+}
+
+/* Rating */
+.card-dk-product .product-rating {
+  @apply flex items-center gap-2;
+}
+
+.card-dk-product .product-stars {
+  @apply flex items-center gap-0.5;
+}
+
+.card-dk-product .product-stars svg {
+  @apply text-[#d2a30b] w-4 h-4;
+}
+
+.card-dk-product .product-rating-text {
+  @apply text-[#4a5565] text-sm;
+}
+
+/* Prix et bouton */
+.card-dk-product .product-footer {
+  @apply flex items-center justify-between;
+  @apply border-t border-gray-100 pt-4;
+}
+
+.card-dk-product .product-price {
+  font-family: var(--dk-font-heading);
+  @apply text-2xl text-[#d2a30b] font-medium;
+}
+
+.card-dk-product .product-cta {
+  @apply bg-[#d2a30b] text-white px-4 py-2 rounded-lg;
+  @apply hover:bg-[#b8900a] transition-colors duration-200;
+  @apply text-sm font-medium;
+}

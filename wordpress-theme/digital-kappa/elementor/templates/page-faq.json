@@ -1,0 +1,186 @@
+{
+  "title": "FAQ - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Questions Fréquentes",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Trouvez rapidement les réponses à vos questions</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Général",
+                "faqs": [
+                  {
+                    "question": "Qu'est-ce que Digital Kappa ?",
+                    "answer": "Digital Kappa est une marketplace de produits digitaux proposant des applications mobiles, des ebooks et des templates. Notre mission est de vous fournir des ressources numériques de qualité, simples et prêtes à l'emploi pour gagner du temps dans vos projets."
+                  },
+                  {
+                    "question": "Comment fonctionne le téléchargement ?",
+                    "answer": "Une fois votre achat effectué, vous recevez immédiatement un email avec un lien de téléchargement sécurisé. Vous pouvez également retrouver tous vos produits dans votre compte utilisateur, accessible à tout moment. Les téléchargements sont illimités et sans date d'expiration."
+                  },
+                  {
+                    "question": "Puis-je télécharger mes produits plusieurs fois ?",
+                    "answer": "Oui, absolument ! Une fois que vous avez acheté un produit, vous pouvez le télécharger autant de fois que nécessaire depuis votre espace client. Vos achats restent disponibles indéfiniment."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Paiement",
+                "faqs": [
+                  {
+                    "question": "Quels moyens de paiement acceptez-vous ?",
+                    "answer": "Nous acceptons les cartes bancaires (Visa, Mastercard, American Express), PayPal, et les virements bancaires. Tous les paiements sont sécurisés via notre plateforme de paiement certifiée."
+                  },
+                  {
+                    "question": "Les prix sont-ils TTC ?",
+                    "answer": "Oui, tous les prix affichés sur Digital Kappa sont TTC (Toutes Taxes Comprises). Il n'y a aucun frais caché. Le prix que vous voyez est le prix final que vous payez."
+                  },
+                  {
+                    "question": "Puis-je obtenir une facture ?",
+                    "answer": "Oui, une facture détaillée est générée automatiquement après chaque achat et envoyée par email. Vous pouvez également la télécharger depuis votre compte utilisateur à tout moment."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Produits",
+                "faqs": [
+                  {
+                    "question": "Vos produits sont-ils compatibles avec Mac et PC ?",
+                    "answer": "La majorité de nos produits sont compatibles avec les deux systèmes. Les ebooks sont au format PDF universel, les templates sont basés sur des technologies web standards, et pour les applications, nous précisons toujours les systèmes compatibles sur chaque fiche produit."
+                  },
+                  {
+                    "question": "Proposez-vous des mises à jour pour vos produits ?",
+                    "answer": "Oui, tous nos produits bénéficient de mises à jour gratuites. Vous recevez automatiquement un email lorsqu'une nouvelle version est disponible, et vous pouvez la télécharger gratuitement depuis votre compte."
+                  },
+                  {
+                    "question": "Puis-je utiliser les produits à des fins commerciales ?",
+                    "answer": "Cela dépend du produit et de la licence associée. La plupart de nos produits incluent une licence commerciale étendue, mais nous vous recommandons de vérifier les conditions spécifiques de chaque produit sur sa page de description."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Support",
+                "faqs": [
+                  {
+                    "question": "Comment obtenir de l'aide ?",
+                    "answer": "Notre équipe support est disponible par email à support@digitalkappa.com. Nous répondons généralement sous 24h en semaine. Vous pouvez également consulter notre documentation en ligne ou utiliser le chat en direct pour une assistance immédiate."
+                  },
+                  {
+                    "question": "Proposez-vous un support technique ?",
+                    "answer": "Oui, notre équipe technique est là pour vous aider avec tous vos produits Digital Kappa. Nous offrons un support par email, chat, et pour certains produits premium, une assistance vidéo personnalisée."
+                  },
+                  {
+                    "question": "Quelle est votre politique de remboursement ?",
+                    "answer": "Nous offrons une garantie satisfait ou remboursé de 14 jours sur tous nos produits. Si vous n'êtes pas satisfait, contactez-nous et nous vous rembourserons intégralement, sans poser de questions."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#2c3340"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_cta",
+              "settings": {
+                "title": "Vous ne trouvez pas votre réponse ?",
+                "description": "Notre équipe est là pour vous aider",
+                "primary_button_text": "Contacter l'équipe",
+                "primary_button_url": {"url": "/contact"},
+                "secondary_button_text": "Chat en direct",
+                "secondary_button_url": {"url": "#"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

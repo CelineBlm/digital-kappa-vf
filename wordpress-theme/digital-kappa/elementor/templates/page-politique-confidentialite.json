@@ -1,0 +1,87 @@
+{
+  "title": "Politique de Confidentialité - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Politique de confidentialité",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Dernière mise à jour : 1er décembre 2024</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "shield",
+                    "title": "Protection RGPD",
+                    "description": "Conformité totale au règlement européen"
+                  },
+                  {
+                    "icon": "lock",
+                    "title": "Données sécurisées",
+                    "description": "Cryptage SSL et serveurs sécurisés"
+                  },
+                  {
+                    "icon": "eye",
+                    "title": "Transparence",
+                    "description": "Utilisation claire de vos informations"
+                  }
+                ],
+                "columns": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"legal-content\"><h2>1. Introduction</h2><p>Digital Kappa, exploitant de la plateforme digitalkappa.com, accorde une importance particulière à la protection de vos données personnelles et au respect de votre vie privée.</p><p>La présente Politique de confidentialité a pour objectif de vous informer de manière transparente sur les données personnelles que nous collectons, les raisons de cette collecte, la manière dont nous les utilisons, les protégeons et vos droits en la matière.</p><p>Cette politique s'applique à tous les utilisateurs de notre site web et clients ayant effectué un achat sur Digital Kappa. En utilisant notre site, vous acceptez les termes de cette politique.</p><h2>2. Responsable du traitement</h2><p>Le responsable du traitement des données personnelles collectées sur digitalkappa.com est Digital Kappa, joignable à l'adresse email : privacy@digitalkappa.com.</p><p>Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter à l'adresse indiquée ci-dessus.</p><h2>3. Données collectées</h2><h3>3.1. Données fournies directement par vous</h3><p>Lors de votre achat sur Digital Kappa, nous collectons les informations suivantes :</p><ul><li>Nom et prénom</li><li>Adresse email</li><li>Adresse de facturation (optionnelle selon le pays)</li><li>Informations de paiement (traitées par notre prestataire tiers sécurisé)</li></ul><h3>3.2. Données collectées automatiquement</h3><p>Lors de votre navigation sur notre site, nous collectons automatiquement :</p><ul><li>Adresse IP</li><li>Type et version de navigateur</li><li>Système d'exploitation</li><li>Pages visitées et durée de visite</li><li>Données de navigation (via cookies analytiques)</li></ul><h3>3.3. Données non collectées</h3><p>Nous ne collectons JAMAIS les données suivantes : numéros de carte bancaire complets (traités uniquement par notre prestataire de paiement sécurisé), données sensibles (religion, opinions politiques, santé), données biométriques, ou tout autre donnée non nécessaire à notre activité.</p><h2>4. Finalités du traitement</h2><p>Vos données personnelles sont collectées et utilisées pour les finalités suivantes :</p><ul><li><strong>Traitement des commandes</strong> - Validation de votre achat, envoi du produit digital, génération de facture</li><li><strong>Communication client</strong> - Envoi des liens de téléchargement, support technique, réponses à vos questions</li><li><strong>Amélioration du service</strong> - Analyse statistique de navigation, optimisation de l'expérience utilisateur</li><li><strong>Obligations légales</strong> - Conservation des factures, respect des obligations comptables et fiscales</li><li><strong>Newsletter (avec consentement)</strong> - Envoi d'informations sur les nouveaux produits et offres spéciales (opt-in uniquement)</li></ul><h2>5. Base légale du traitement</h2><p>Le traitement de vos données personnelles repose sur plusieurs bases légales :</p><ul><li><strong>Exécution du contrat :</strong> traitement des commandes et livraison des produits</li><li><strong>Obligation légale :</strong> conservation des factures et données fiscales</li><li><strong>Intérêt légitime :</strong> amélioration de nos services et prévention de la fraude</li><li><strong>Consentement :</strong> newsletter et communications marketing (opt-in)</li></ul><h2>6. Durée de conservation</h2><p>Vos données personnelles sont conservées pour les durées suivantes :</p><ul><li><strong>Données de commande :</strong> 10 ans (obligation légale comptable)</li><li><strong>Données de navigation :</strong> 13 mois maximum</li><li><strong>Newsletter :</strong> jusqu'à votre désinscription</li><li><strong>Support client :</strong> 3 ans après la dernière interaction</li></ul><h2>7. Partage des données</h2><p>Nous ne vendons ni ne louons jamais vos données personnelles. Vos données peuvent être partagées uniquement avec :</p><ul><li><strong>Prestataire de paiement :</strong> pour traiter les transactions (Stripe, PayPal)</li><li><strong>Hébergeur web :</strong> pour le stockage sécurisé des données</li><li><strong>Service d'emailing :</strong> pour l'envoi des liens de téléchargement et newsletters</li><li><strong>Autorités légales :</strong> en cas d'obligation légale uniquement</li></ul><p>Tous nos prestataires sont soumis à des obligations strictes de sécurité et de confidentialité conformément au RGPD.</p><h2>8. Sécurité des données</h2><p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles :</p><ul><li>Cryptage SSL/TLS de toutes les communications</li><li>Serveurs sécurisés et régulièrement mis à jour</li><li>Accès restreint aux données personnelles (principe du moindre privilège)</li><li>Sauvegardes régulières et chiffrées</li><li>Surveillance et détection des tentatives d'intrusion</li></ul><h2>9. Vos droits</h2><p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p><ul><li><strong>Droit d'accès :</strong> obtenir une copie de vos données personnelles</li><li><strong>Droit de rectification :</strong> corriger vos données inexactes ou incomplètes</li><li><strong>Droit à l'effacement :</strong> supprimer vos données dans certaines conditions</li><li><strong>Droit à la limitation :</strong> restreindre le traitement de vos données</li><li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li><li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données</li><li><strong>Droit de retrait du consentement :</strong> retirer votre consentement à tout moment</li></ul><p>Pour exercer ces droits, contactez-nous à privacy@digitalkappa.com. Nous répondrons dans un délai maximum de 30 jours.</p><h2>10. Cookies</h2><p>Notre site utilise des cookies pour améliorer votre expérience de navigation :</p><ul><li><strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site (panier, session)</li><li><strong>Cookies analytiques :</strong> mesure d'audience et statistiques (Google Analytics)</li><li><strong>Cookies de préférence :</strong> mémorisation de vos choix (langue, devise)</li></ul><p>Vous pouvez configurer vos préférences de cookies ou les refuser via les paramètres de votre navigateur. Notez que certaines fonctionnalités du site peuvent être limitées.</p><h2>11. Modifications</h2><p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une nouvelle date de mise à jour.</p><p>En cas de modification substantielle, nous vous informerons par email ou via une notification sur le site.</p><h2>12. Contact</h2><p>Pour toute question concernant cette politique de confidentialité :</p><p><strong>Email :</strong> privacy@digitalkappa.com</p><p><strong>Adresse :</strong> Digital Kappa - France</p><p>Vous pouvez également contacter la CNIL (Commission Nationale de l'Informatique et des Libertés) si vous estimez que vos droits ne sont pas respectés.</p></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

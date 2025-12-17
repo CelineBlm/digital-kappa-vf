@@ -1,0 +1,91 @@
+{
+  "title": "Contact - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contactez-nous",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Une question ? Notre équipe est là pour vous aider.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_contact_form",
+              "settings": {
+                "section_title": "Envoyez-nous un message",
+                "section_description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+                "email": "contact@digitalkappa.com",
+                "button_text": "Envoyer le message"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Questions fréquentes",
+                "faqs": [
+                  {
+                    "question": "Quel est le délai de réponse ?",
+                    "answer": "Nous répondons généralement sous 24 heures en jours ouvrés."
+                  },
+                  {
+                    "question": "Comment obtenir un remboursement ?",
+                    "answer": "Contactez-nous en indiquant votre numéro de commande et la raison de votre demande. Nous traitons les remboursements sous 7 jours ouvrés."
+                  },
+                  {
+                    "question": "Proposez-vous un support téléphonique ?",
+                    "answer": "Actuellement, notre support est disponible par email et chat. Le support téléphonique est réservé aux clients premium."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

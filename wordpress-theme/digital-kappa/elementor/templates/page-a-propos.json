@@ -1,0 +1,178 @@
+{
+  "title": "À propos - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_about_section",
+              "settings": {
+                "badge_text": "À propos de nous",
+                "title": "Digital Kappa, votre partenaire digital",
+                "description": "Nous proposons des ressources numériques simples, efficaces et de qualité pour aider les créateurs, entrepreneurs et passionnés à accomplir plus en moins de temps.",
+                "stats": [
+                  {"value": "2026", "label": "Année de lancement"},
+                  {"value": "100%", "label": "Engagement qualité"},
+                  {"value": "14 jours", "label": "Garantie satisfait ou remboursé"},
+                  {"value": "24h", "label": "Support réactif"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Notre histoire",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #4a5565;\">Digital Kappa naît de l'envie de proposer des ressources numériques simples, efficaces et de qualité pour aider les créateurs, entrepreneurs et passionnés à accomplir plus en moins de temps.</p><p style=\"color: #4a5565;\">Le projet vise à rendre l'accès aux outils digitaux plus rapide, plus clair et plus fiable. Contrairement aux marketplaces géantes où il est difficile de s'y retrouver, nous proposons une sélection organisée qui évite la confusion.</p><p style=\"color: #4a5565;\">Notre mission est de vous faire gagner du temps en vous proposant des produits prêts à l'emploi, pensés pour être directement utilisables dans vos projets personnels ou professionnels.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Nos valeurs",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "zap",
+                    "title": "Simplicité",
+                    "description": "Des produits faciles à comprendre et à utiliser, sans complexité inutile."
+                  },
+                  {
+                    "icon": "users",
+                    "title": "Accessibilité",
+                    "description": "Des ressources accessibles à tous, quel que soit votre niveau."
+                  },
+                  {
+                    "icon": "award",
+                    "title": "Qualité",
+                    "description": "Une sélection rigoureuse garantissant l'excellence de chaque produit."
+                  },
+                  {
+                    "icon": "trending-up",
+                    "title": "Modernité",
+                    "description": "Des outils et designs à la pointe des tendances actuelles."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Fiabilité",
+                    "description": "Des produits testés et approuvés par notre communauté."
+                  },
+                  {
+                    "icon": "check-circle",
+                    "title": "Satisfaction client",
+                    "description": "Votre réussite est notre priorité absolue."
+                  }
+                ],
+                "columns": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a1a1a"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ce qui nous différencie",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul style=\"color: #9ca3af; list-style: none; padding: 0;\"><li style=\"padding: 1rem 0; border-bottom: 1px solid #374151;\">✓ <strong style=\"color: #ffffff;\">Téléchargement instantané</strong> - Accédez immédiatement à vos produits dès l'achat, sans attente.</li><li style=\"padding: 1rem 0; border-bottom: 1px solid #374151;\">✓ <strong style=\"color: #ffffff;\">Organisation claire et intuitive</strong> - Trouvez facilement ce que vous cherchez grâce à notre système de catégorisation simple.</li><li style=\"padding: 1rem 0; border-bottom: 1px solid #374151;\">✓ <strong style=\"color: #ffffff;\">Qualité constante</strong> - Chaque produit est vérifié et validé selon nos standards élevés.</li><li style=\"padding: 1rem 0; border-bottom: 1px solid #374151;\">✓ <strong style=\"color: #ffffff;\">Support dédié</strong> - Une équipe disponible pour vous accompagner dans vos projets.</li><li style=\"padding: 1rem 0;\">✓ <strong style=\"color: #ffffff;\">Mises à jour gratuites</strong> - Bénéficiez des améliorations et nouvelles fonctionnalités sans coût additionnel.</li></ul>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Notre mission et nos valeurs",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #4a5565;\">Digital Kappa est bien plus qu'une simple marketplace de produits numériques. Nous aspirons à devenir le partenaire de confiance de tous les créateurs, développeurs et entrepreneurs qui souhaitent gagner du temps et se concentrer sur l'essentiel : la création de valeur.</p><p style=\"color: #4a5565;\">Nous croyons fermement que l'accès aux ressources digitales de qualité ne devrait pas être un parcours du combattant. C'est pourquoi nous sélectionnons chaque produit avec soin, en veillant à ce qu'il réponde aux standards les plus élevés en termes de fonctionnalité, de design et d'utilisabilité.</p><p style=\"color: #4a5565;\">Notre engagement est simple : vous fournir des produits digitaux de qualité, accessibles, modernes et fiables, pour que vous puissiez vous concentrer sur ce qui compte vraiment - la réalisation de vos ambitions.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

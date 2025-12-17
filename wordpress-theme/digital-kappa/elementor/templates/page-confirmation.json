@@ -1,0 +1,132 @@
+{
+  "title": "Confirmation de commande - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"text-align: center; padding: 3rem 0;\"><div style=\"width: 5rem; height: 5rem; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;\"><i data-lucide=\"check-circle\" style=\"width: 3rem; height: 3rem; color: #16a34a;\"></i></div><h1 style=\"color: #0d1421; margin-bottom: 0.5rem;\">Commande confirmée !</h1><p style=\"font-size: 1.125rem; color: rgba(13,20,33,0.7);\">Merci pour votre achat. Votre commande a été traitée avec succès.</p><div style=\"display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(210,163,11,0.1); padding: 0.5rem 1rem; border-radius: 0.5rem; margin-top: 1.5rem;\"><i data-lucide=\"file-text\" style=\"width: 1.25rem; height: 1.25rem; color: #d2a30b;\"></i><span style=\"font-size: 0.875rem; font-weight: 600; color: #d2a30b;\">Commande n° DK-XXXXXXX</span></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "settings": {
+            "_column_size": 66
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"confirmation-card\" style=\"background: white; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);\"><div style=\"display: flex; align-items: flex-start; gap: 1rem;\"><div style=\"width: 3rem; height: 3rem; background: #eff6ff; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center;\"><i data-lucide=\"mail\" style=\"width: 1.5rem; height: 1.5rem; color: #2563eb;\"></i></div><div><h3 style=\"color: #1a1a1a; margin-bottom: 0.25rem;\">Email de confirmation envoyé</h3><p style=\"font-size: 0.875rem; color: #4b5563;\">Un email de confirmation a été envoyé à <strong style=\"color: #1a1a1a;\">votre@email.com</strong> avec le récapitulatif de votre commande et les liens de téléchargement.</p></div></div></div>"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"confirmation-card\" style=\"background: white; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);\"><h3 style=\"color: #1a1a1a; margin-bottom: 1.5rem;\">Vos produits</h3><div style=\"background: #f9fafb; border: 1px solid #f3f4f6; border-radius: 0.75rem; padding: 1rem; display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;\"><div><h4 style=\"color: #1a1a1a; margin-bottom: 0.25rem;\">Nom du produit</h4><p style=\"font-size: 0.875rem; color: #4b5563;\">Prix : XX €</p></div><a href=\"#\" style=\"display: inline-flex; align-items: center; gap: 0.5rem; background: #d2a30b; color: white; padding: 0.625rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600; text-decoration: none;\"><i data-lucide=\"download\" style=\"width: 1rem; height: 1rem;\"></i>Télécharger</a></div><div style=\"background: #eff6ff; border-radius: 0.5rem; padding: 1rem; margin-top: 1.5rem;\"><div style=\"display: flex; gap: 0.75rem;\"><i data-lucide=\"download\" style=\"width: 1.25rem; height: 1.25rem; color: #2563eb; flex-shrink: 0;\"></i><div style=\"font-size: 0.875rem; color: #1e3a5f;\"><p style=\"font-weight: 600; margin-bottom: 0.25rem;\">Accès à vie à vos téléchargements</p><p style=\"color: #1e40af;\">Vous pouvez télécharger vos produits autant de fois que vous le souhaitez. Les liens n'expirent jamais et vous recevrez toutes les futures mises à jour gratuitement.</p></div></div></div></div>"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"confirmation-card\" style=\"background: white; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);\"><h3 style=\"color: #1a1a1a; margin-bottom: 1.5rem;\">Prochaines étapes</h3><div style=\"display: flex; gap: 1rem; margin-bottom: 1rem;\"><div style=\"width: 2rem; height: 2rem; background: #d2a30b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 700; flex-shrink: 0;\">1</div><div><h4 style=\"color: #1a1a1a; margin-bottom: 0.25rem;\">Consultez votre email</h4><p style=\"font-size: 0.875rem; color: #4b5563;\">Un email de confirmation avec tous les détails et liens de téléchargement vous a été envoyé.</p></div></div><div style=\"display: flex; gap: 1rem; margin-bottom: 1rem;\"><div style=\"width: 2rem; height: 2rem; background: #d2a30b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 700; flex-shrink: 0;\">2</div><div><h4 style=\"color: #1a1a1a; margin-bottom: 0.25rem;\">Téléchargez vos produits</h4><p style=\"font-size: 0.875rem; color: #4b5563;\">Cliquez sur les boutons de téléchargement ci-dessus ou utilisez les liens dans votre email.</p></div></div><div style=\"display: flex; gap: 1rem;\"><div style=\"width: 2rem; height: 2rem; background: #d2a30b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 700; flex-shrink: 0;\">3</div><div><h4 style=\"color: #1a1a1a; margin-bottom: 0.25rem;\">Commencez à utiliser</h4><p style=\"font-size: 0.875rem; color: #4b5563;\">Suivez la documentation incluse pour démarrer rapidement avec vos nouveaux produits.</p></div></div></div>"
+              }
+            }
+          ]
+        },
+        {
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"sidebar-card\" style=\"background: white; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);\"><h3 style=\"color: #1a1a1a; margin-bottom: 1rem;\">Récapitulatif</h3><div style=\"border-bottom: 1px solid #f3f4f6; padding-bottom: 1rem; margin-bottom: 1rem;\"><div style=\"display: flex; justify-content: space-between; font-size: 0.875rem; margin-bottom: 0.75rem;\"><span style=\"color: #4b5563;\">Commande n°</span><span style=\"font-weight: 600; color: #1a1a1a;\">DK-XXXXXXX</span></div><div style=\"display: flex; justify-content: space-between; font-size: 0.875rem; margin-bottom: 0.75rem;\"><span style=\"color: #4b5563;\">Date</span><span style=\"font-weight: 600; color: #1a1a1a;\">XX décembre 2024</span></div><div style=\"display: flex; justify-content: space-between; font-size: 0.875rem;\"><span style=\"color: #4b5563;\">Email</span><span style=\"font-weight: 600; color: #1a1a1a;\">votre@email.com</span></div></div><div style=\"display: flex; justify-content: space-between;\"><span style=\"font-weight: 600; color: #1a1a1a;\">Total</span><span style=\"font-size: 1.5rem; font-weight: 700; color: #d2a30b;\">XX €</span></div></div>"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"sidebar-card\" style=\"background: white; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);\"><div style=\"width: 3rem; height: 3rem; background: #f3e8ff; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;\"><i data-lucide=\"help-circle\" style=\"width: 1.5rem; height: 1.5rem; color: #9333ea;\"></i></div><h3 style=\"color: #1a1a1a; margin-bottom: 0.5rem;\">Besoin d'aide ?</h3><p style=\"font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;\">Notre équipe support est là pour vous aider.</p><a href=\"mailto:support@digitalkappa.com\" style=\"display: flex; align-items: center; justify-content: center; gap: 0.5rem; background: white; border: 1px solid #e5e7eb; color: #374151; padding: 0.625rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600; text-decoration: none;\"><i data-lucide=\"mail\" style=\"width: 1rem; height: 1rem;\"></i>Contacter le support</a></div>"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"sidebar-card\" style=\"background: #f9fafb; border: 1px solid #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;\"><h3 style=\"font-size: 0.875rem; font-weight: 600; color: #1a1a1a; margin-bottom: 1rem;\">Vos garanties</h3><div style=\"font-size: 0.875rem; color: #4b5563;\"><div style=\"display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;\"><i data-lucide=\"check-circle\" style=\"width: 1rem; height: 1rem; color: #16a34a; flex-shrink: 0; margin-top: 0.125rem;\"></i><span>Téléchargements illimités</span></div><div style=\"display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;\"><i data-lucide=\"check-circle\" style=\"width: 1rem; height: 1rem; color: #16a34a; flex-shrink: 0; margin-top: 0.125rem;\"></i><span>Mises à jour gratuites</span></div><div style=\"display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;\"><i data-lucide=\"check-circle\" style=\"width: 1rem; height: 1rem; color: #16a34a; flex-shrink: 0; margin-top: 0.125rem;\"></i><span>Support technique inclus</span></div><div style=\"display: flex; align-items: flex-start; gap: 0.5rem;\"><i data-lucide=\"check-circle\" style=\"width: 1rem; height: 1rem; color: #16a34a; flex-shrink: 0; margin-top: 0.125rem;\"></i><span>Satisfait ou remboursé 14 jours</span></div></div></div>"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Retour à l'accueil",
+                "link": {"url": "/"},
+                "align": "stretch",
+                "button_type": "default",
+                "background_color": "#d2a30b",
+                "button_text_color": "#ffffff",
+                "border_radius": {"size": 8}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#2b2d31"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_cta",
+              "settings": {
+                "title": "Découvrez nos autres produits",
+                "description": "Explorez notre catalogue complet de produits digitaux premium",
+                "button_text": "Voir tous les produits",
+                "button_link": "/produits",
+                "style": "outline"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

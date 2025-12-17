@@ -1,0 +1,202 @@
+{
+  "title": "Comment ça marche - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_hero",
+              "settings": {
+                "badge_text": "Simple et sécurisé",
+                "title": "Comment ça marche ?",
+                "description": "Achetez et téléchargez vos produits digitaux en quelques clics. Notre processus simplifié vous garantit un accès immédiat à vos achats.",
+                "show_featured_products": "no"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_process_steps",
+              "settings": {
+                "steps": [
+                  {
+                    "icon": "search",
+                    "title": "Parcourez",
+                    "description": "Explorez notre catalogue de produits digitaux : applications, ebooks et templates. Utilisez les filtres pour trouver exactement ce dont vous avez besoin."
+                  },
+                  {
+                    "icon": "credit-card",
+                    "title": "Achetez en un clic",
+                    "description": "Pas de compte requis. Cliquez sur \"Acheter maintenant\", renseignez votre email et réglez en toute sécurité via notre système de paiement sécurisé."
+                  },
+                  {
+                    "icon": "download",
+                    "title": "Téléchargez",
+                    "description": "Accédez immédiatement à votre produit après le paiement. Recevez un email de confirmation avec un lien de téléchargement valable à vie."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "user-x",
+                    "title": "Sans création de compte",
+                    "description": "Un simple email suffit pour finaliser votre achat"
+                  },
+                  {
+                    "icon": "zap",
+                    "title": "Accès instantané",
+                    "description": "Téléchargez votre produit immédiatement après le paiement"
+                  },
+                  {
+                    "icon": "lock",
+                    "title": "Paiement 100% sécurisé",
+                    "description": "Vos données sont protégées par un cryptage de niveau bancaire"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "shield",
+                    "title": "Cryptage SSL",
+                    "description": "Toutes les transactions sont sécurisées"
+                  },
+                  {
+                    "icon": "credit-card",
+                    "title": "Paiement sécurisé",
+                    "description": "Nous ne stockons aucune donnée bancaire"
+                  },
+                  {
+                    "icon": "download",
+                    "title": "Accès à vie",
+                    "description": "Téléchargez vos produits quand vous voulez"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Questions fréquentes",
+                "faqs": [
+                  {
+                    "question": "Dois-je créer un compte pour acheter ?",
+                    "answer": "Non, aucun compte n'est nécessaire. Un simple email suffit pour recevoir votre produit."
+                  },
+                  {
+                    "question": "Quels moyens de paiement acceptez-vous ?",
+                    "answer": "Nous acceptons les cartes bancaires (Visa, Mastercard, American Express) et PayPal."
+                  },
+                  {
+                    "question": "Combien de temps le lien de téléchargement est-il valable ?",
+                    "answer": "Votre lien de téléchargement est valable à vie. Vous pouvez télécharger votre produit autant de fois que nécessaire."
+                  },
+                  {
+                    "question": "Puis-je obtenir une facture ?",
+                    "answer": "Oui, une facture est automatiquement générée et envoyée par email après chaque achat."
+                  },
+                  {
+                    "question": "Les produits sont-ils remboursables ?",
+                    "answer": "Oui, nous offrons une garantie satisfait ou remboursé de 14 jours sur tous nos produits."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#2b2d31"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_cta",
+              "settings": {
+                "title": "Prêt à découvrir nos produits digitaux ?",
+                "description": "Rejoignez des centaines de développeurs et créateurs qui utilisent nos produits pour accélérer leurs projets",
+                "primary_button_text": "Explorer le catalogue",
+                "primary_button_url": {"url": "/produits"},
+                "secondary_button_text": "Contactez-nous",
+                "secondary_button_url": {"url": "/contact"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "title": "Accueil - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0"
+        }
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_hero",
+              "settings": {
+                "badge_text": "Marketplace de confiance",
+                "title": "Découvrez nos produits digitaux",
+                "title_highlight": "de qualité professionnelle",
+                "description": "Ebooks, applications et templates créés par des experts pour vous aider à réussir vos projets. Téléchargement instantané et support premium inclus.",
+                "primary_button_text": "Explorer le catalogue",
+                "primary_button_url": {"url": "/produits"},
+                "secondary_button_text": "Comment ça marche",
+                "secondary_button_url": {"url": "/comment-ca-marche"},
+                "show_featured_products": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "download",
+                    "title": "Téléchargement instantané",
+                    "description": "Accédez à vos produits immédiatement après l'achat. Pas d'attente, pas de délai de livraison."
+                  },
+                  {
+                    "icon": "shield-check",
+                    "title": "Paiement sécurisé",
+                    "description": "Transactions 100% sécurisées via Stripe et PayPal. Vos données sont protégées."
+                  },
+                  {
+                    "icon": "refresh-cw",
+                    "title": "Satisfait ou remboursé",
+                    "description": "14 jours pour changer d'avis. Remboursement intégral sans conditions."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_categories",
+              "settings": {
+                "section_title": "Explorez nos catégories",
+                "categories": [
+                  {
+                    "icon": "book-open",
+                    "title": "Ebooks",
+                    "count": "25 produits",
+                    "url": {"url": "/categorie-produit/ebook"}
+                  },
+                  {
+                    "icon": "smartphone",
+                    "title": "Applications",
+                    "count": "18 produits",
+                    "url": {"url": "/categorie-produit/application"}
+                  },
+                  {
+                    "icon": "layout-template",
+                    "title": "Templates",
+                    "count": "32 produits",
+                    "url": {"url": "/categorie-produit/template"}
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_products_grid",
+              "settings": {
+                "section_title": "Nos produits populaires",
+                "section_description": "Découvrez nos meilleures ventes et produits les plus appréciés par notre communauté",
+                "posts_per_page": 6,
+                "columns": "3",
+                "show_view_all_button": "yes",
+                "view_all_url": {"url": "/produits"}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_stats",
+              "settings": {
+                "stats": [
+                  {"value": "150+", "label": "Produits disponibles"},
+                  {"value": "5000+", "label": "Clients satisfaits"},
+                  {"value": "4.9/5", "label": "Note moyenne"},
+                  {"value": "24/7", "label": "Support disponible"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_process_steps",
+              "settings": {
+                "section_title": "Comment ça marche ?",
+                "section_description": "Achetez et téléchargez vos produits digitaux en quelques clics",
+                "steps": [
+                  {
+                    "icon": "search",
+                    "title": "Parcourez",
+                    "description": "Explorez notre catalogue de produits digitaux : applications, ebooks et templates."
+                  },
+                  {
+                    "icon": "credit-card",
+                    "title": "Achetez en un clic",
+                    "description": "Pas de compte requis. Renseignez votre email et réglez en toute sécurité."
+                  },
+                  {
+                    "icon": "download",
+                    "title": "Téléchargez",
+                    "description": "Accédez immédiatement à votre produit avec un lien de téléchargement à vie."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_testimonials",
+              "settings": {
+                "section_title": "Ce que nos clients disent",
+                "section_description": "Découvrez les avis de nos clients satisfaits",
+                "testimonials": [
+                  {
+                    "content": "Le Guide du développeur moderne est incroyablement complet. J'ai appris énormément de choses et je le recommande à tous les développeurs.",
+                    "author_name": "Thomas Martin",
+                    "author_role": "Développeur Full Stack",
+                    "rating": 5
+                  },
+                  {
+                    "content": "Le Design System Pro m'a fait gagner des semaines de travail. Les composants sont bien pensés et la documentation est parfaite.",
+                    "author_name": "Marie Durand",
+                    "author_role": "UX Designer",
+                    "rating": 5
+                  },
+                  {
+                    "content": "Service client au top et produits de qualité. Je reviendrai certainement pour mes prochains projets.",
+                    "author_name": "Pierre Lefebvre",
+                    "author_role": "Entrepreneur",
+                    "rating": 5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_faq",
+              "settings": {
+                "section_title": "Questions fréquentes",
+                "section_description": "Trouvez rapidement les réponses à vos questions",
+                "faqs": [
+                  {
+                    "question": "Qu'est-ce que Digital Kappa ?",
+                    "answer": "Digital Kappa est une marketplace de produits digitaux proposant des applications mobiles, des ebooks et des templates de qualité."
+                  },
+                  {
+                    "question": "Comment fonctionne le téléchargement ?",
+                    "answer": "Une fois votre achat effectué, vous recevez immédiatement un email avec un lien de téléchargement sécurisé valable à vie."
+                  },
+                  {
+                    "question": "Quels moyens de paiement acceptez-vous ?",
+                    "answer": "Nous acceptons les cartes bancaires (Visa, Mastercard, American Express), PayPal, et les virements bancaires."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#2b2d31"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_cta",
+              "settings": {
+                "title": "Prêt à découvrir nos produits digitaux ?",
+                "description": "Rejoignez des centaines de développeurs et créateurs qui utilisent nos produits pour accélérer leurs projets.",
+                "primary_button_text": "Explorer le catalogue",
+                "primary_button_url": {"url": "/produits"},
+                "secondary_button_text": "Contactez-nous",
+                "secondary_button_url": {"url": "/contact"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

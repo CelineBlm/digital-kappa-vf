@@ -1,0 +1,87 @@
+{
+  "title": "Mentions Légales - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mentions Légales",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Informations légales relatives à l'utilisation du site digitalkappa.com</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "building",
+                    "title": "Éditeur du site",
+                    "description": "Digital Kappa - France"
+                  },
+                  {
+                    "icon": "globe",
+                    "title": "Hébergement",
+                    "description": "Serveurs sécurisés en Union Européenne"
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Protection des données",
+                    "description": "Conformité RGPD garantie"
+                  }
+                ],
+                "columns": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"legal-content\"><h2>1. Éditeur du site</h2><p>Le site web digitalkappa.com est édité par Digital Kappa, entreprise de droit français.</p><p><strong>Adresse :</strong> Digital Kappa - France</p><p><strong>Email :</strong> contact@digitalkappa.com</p><p><strong>Directeur de la publication :</strong> Digital Kappa</p><h2>2. Hébergement</h2><p>Le site digitalkappa.com est hébergé sur des serveurs sécurisés situés dans l'Union Européenne, garantissant la conformité aux réglementations européennes en matière de protection des données.</p><h2>3. Propriété intellectuelle</h2><p>L'ensemble des contenus présents sur le site digitalkappa.com (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) sont protégés par le droit d'auteur et le droit des marques.</p><p>Toute reproduction, représentation, modification, publication, transmission, ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, et sur quelque support que ce soit est interdite sans autorisation écrite préalable de Digital Kappa.</p><p>Toute exploitation non autorisée du site ou de son contenu sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p><h2>4. Produits digitaux</h2><p>Les produits digitaux vendus sur digitalkappa.com (ebooks, applications, templates) sont soumis à des licences d'utilisation spécifiques. L'achat d'un produit confère un droit d'utilisation personnel non exclusif et non transférable.</p><p>La revente, redistribution ou partage des produits achetés est strictement interdite sauf mention contraire dans la licence du produit.</p><h2>5. Limitation de responsabilité</h2><p>Digital Kappa s'efforce de fournir des informations exactes et à jour sur son site. Toutefois, Digital Kappa ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p><p>En conséquence, Digital Kappa décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site, ainsi que pour tous dommages résultant d'une intrusion frauduleuse d'un tiers.</p><h2>6. Liens hypertextes</h2><p>Le site digitalkappa.com peut contenir des liens hypertextes vers d'autres sites. Digital Kappa n'exerce aucun contrôle sur ces sites et n'assume aucune responsabilité quant à leur contenu.</p><p>La création de liens hypertextes vers digitalkappa.com est soumise à l'autorisation préalable de Digital Kappa.</p><h2>7. Données personnelles</h2><p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles.</p><p>Pour exercer ces droits ou pour toute question relative à vos données personnelles, vous pouvez nous contacter à : privacy@digitalkappa.com</p><p>Pour plus d'informations, veuillez consulter notre <a href=\"/politique-confidentialite\" style=\"color: #d2a30b;\">Politique de Confidentialité</a>.</p><h2>8. Cookies</h2><p>Le site digitalkappa.com utilise des cookies pour améliorer l'expérience utilisateur et mesurer l'audience. En naviguant sur ce site, vous acceptez l'utilisation de cookies conformément à notre politique de cookies.</p><p>Vous pouvez paramétrer ou désactiver les cookies dans les réglages de votre navigateur.</p><h2>9. Droit applicable</h2><p>Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p><h2>10. Contact</h2><p>Pour toute question concernant ces mentions légales, vous pouvez nous contacter :</p><p><strong>Email :</strong> contact@digitalkappa.com</p><p><strong>Adresse :</strong> Digital Kappa - France</p></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

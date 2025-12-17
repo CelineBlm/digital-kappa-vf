@@ -1,0 +1,92 @@
+{
+  "title": "CGV - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb"
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Conditions générales de vente",
+                "align": "center",
+                "title_color": "#1a1a1a"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Dernière mise à jour : 1er décembre 2024</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_value_propositions",
+              "settings": {
+                "propositions": [
+                  {
+                    "icon": "file-text",
+                    "title": "Produits digitaux",
+                    "description": "Tous nos produits sont 100% numériques et téléchargeables instantanément"
+                  },
+                  {
+                    "icon": "credit-card",
+                    "title": "Paiement sécurisé",
+                    "description": "Transactions cryptées et conformes aux normes bancaires"
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Licence d'utilisation",
+                    "description": "Chaque achat inclut une licence personnelle ou commerciale"
+                  },
+                  {
+                    "icon": "refresh-cw",
+                    "title": "Garantie 14 jours",
+                    "description": "Remboursement intégral si le produit ne correspond pas"
+                  }
+                ],
+                "columns": "4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"legal-content\"><h2>1. Objet et champ d'application</h2><p>Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre Digital Kappa, société exploitant la plateforme digitalkappa.com, et tout client souhaitant effectuer un achat de produits digitaux sur le site.</p><p>En effectuant une commande sur Digital Kappa, le client reconnaît avoir pris connaissance des présentes CGV et les accepter sans réserve.</p><h2>2. Produits et services</h2><p>Digital Kappa commercialise exclusivement des produits digitaux sous forme de fichiers téléchargeables : ebooks (format PDF), applications mobiles et web (fichiers d'installation ou code source), et templates de design (fichiers compatibles avec divers logiciels).</p><h2>3. Commande et tarifs</h2><p>Tous les prix affichés sur Digital Kappa sont en euros (€) et incluent la TVA applicable au taux en vigueur. Les prix sont fermes et non révisables pendant leur période de validité.</p><h2>4. Paiement</h2><p>Le paiement s'effectue en ligne au moment de la commande par carte bancaire (Visa, Mastercard, American Express) ou via PayPal. Toutes les transactions sont cryptées selon le protocole SSL et conformes aux normes PCI-DSS.</p><h2>5. Livraison et accès aux produits</h2><p>La livraison des produits digitaux s'effectue immédiatement après confirmation du paiement. Le client reçoit par email un lien de téléchargement sécurisé valable 30 jours.</p><h2>6. Droit de rétractation et remboursement</h2><p>Digital Kappa offre une garantie satisfait ou remboursé de 14 jours. Si le produit ne correspond pas à vos attentes, vous pouvez demander un remboursement intégral dans les 14 jours suivant l'achat.</p><h2>7. Licence d'utilisation</h2><p>Chaque achat sur Digital Kappa confère au client une licence d'utilisation non exclusive et non transférable du produit digital.</p><h2>8. Garantie et support</h2><p>Digital Kappa garantit que les produits vendus sont conformes à leur description. Un support technique par email est disponible pour tous les clients.</p><h2>9. Contact</h2><p>Email : support@digitalkappa.com<br>Adresse : Digital Kappa - France</p></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

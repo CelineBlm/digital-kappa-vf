@@ -1,0 +1,525 @@
+/*
+Theme Name: Digital Kappa
+Theme URI: https://digitalkappa.com
+Author: Digital Kappa
+Author URI: https://digitalkappa.com
+Description: Thème WordPress premium pour marketplace de produits digitaux. Design moderne avec support complet Elementor.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: digital-kappa
+Tags: e-commerce, elementor, one-column, custom-colors, custom-menu, featured-images, full-width-template, theme-options, translation-ready
+
+Digital Kappa - Votre marketplace de produits digitaux premium
+*/
+
+/* ============================================
+   VARIABLES CSS - DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* Système de design de base */
+  --font-size: 16px;
+  --radius: 0.625rem;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* Couleurs de la marque */
+  --dk-gold: #d2a30b;
+  --dk-gold-hover: #b8900a;
+  --dk-gold-light: #fffbf0;
+
+  /* Couleurs de texte */
+  --dk-text-primary: #1a1a1a;
+  --dk-text-primary-alt: #0d1421;
+  --dk-text-secondary: #4a5565;
+  --dk-text-muted: rgba(13, 20, 33, 0.7);
+
+  /* Couleurs de fond */
+  --dk-bg-dark: #2b2d31;
+  --dk-bg-dark-alt: #1a1a1a;
+  --dk-bg-dark-card: #2c3340;
+  --dk-bg-light: #f9fafb;
+  --dk-bg-gray: #f0f2f5;
+
+  /* Bordures et ombres */
+  --dk-border: #f0f2f5;
+  --dk-border-gray: #e5e7eb;
+
+  /* Couleurs supplémentaires */
+  --dk-destructive: #d4183d;
+  --dk-success: #00A63E;
+  --dk-blue: #155DFC;
+  --dk-purple: #9810FA;
+
+  /* Typographie */
+  --dk-font-heading: 'Merriweather', serif;
+  --dk-font-body: 'Montserrat', sans-serif;
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+  color: var(--dk-text-primary);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--dk-font-heading);
+  font-weight: var(--font-weight-medium);
+  color: var(--dk-text-primary);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--dk-text-primary-alt);
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-family: var(--dk-font-body);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--dk-gold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--dk-gold-hover);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-dk-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--dk-gold);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-dk-primary:hover {
+  background-color: var(--dk-gold-hover);
+  color: #ffffff;
+}
+
+.btn-dk-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  color: var(--dk-gold);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--dk-gold);
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-dk-secondary:hover {
+  background-color: var(--dk-gold-light);
+  color: var(--dk-gold);
+}
+
+.btn-dk-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--dk-bg-dark);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-dk-dark:hover {
+  background-color: #3a3d42;
+}
+
+/* ============================================
+   CONTAINERS
+   ============================================ */
+
+.container-dk {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-dk-narrow {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-dk-wide {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container-dk,
+  .container-dk-narrow,
+  .container-dk-wide {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+
+.badge-dk-gold {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--dk-gold);
+  color: #ffffff;
+  font-family: var(--dk-font-body);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+}
+
+.badge-dk-light {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(210, 163, 11, 0.1);
+  color: var(--dk-gold);
+  font-family: var(--dk-font-body);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+.input-dk {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5dc;
+  border-radius: 0.5rem;
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  color: var(--dk-text-primary);
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-dk::placeholder {
+  color: rgba(10, 10, 10, 0.5);
+}
+
+.input-dk:focus {
+  outline: none;
+  border-color: var(--dk-gold);
+  box-shadow: 0 0 0 3px rgba(210, 163, 11, 0.2);
+}
+
+.textarea-dk {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5dc;
+  border-radius: 0.5rem;
+  font-family: var(--dk-font-body);
+  font-size: 1rem;
+  color: var(--dk-text-primary);
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea-dk:focus {
+  outline: none;
+  border-color: var(--dk-gold);
+  box-shadow: 0 0 0 3px rgba(210, 163, 11, 0.2);
+}
+
+.label-dk {
+  display: block;
+  font-family: var(--dk-font-body);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  color: #364153;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+.card-dk {
+  background-color: #ffffff;
+  border: 1px solid var(--dk-border-gray);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-dk:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: rgba(210, 163, 11, 0.3);
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+.section-dk {
+  padding: 3rem 1rem;
+}
+
+.section-dk-dark {
+  background-color: var(--dk-bg-dark);
+  color: #ffffff;
+}
+
+.section-dk-gray {
+  background-color: var(--dk-bg-light);
+}
+
+@media (min-width: 1024px) {
+  .section-dk {
+    padding: 5rem;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-dk {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.5s ease-out;
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================ */
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-dk-gold { color: var(--dk-gold); }
+.text-dk-primary { color: var(--dk-text-primary); }
+.text-dk-secondary { color: var(--dk-text-secondary); }
+.text-dk-muted { color: var(--dk-text-muted); }
+.text-white { color: #ffffff; }
+
+.bg-dk-gold { background-color: var(--dk-gold); }
+.bg-dk-dark { background-color: var(--dk-bg-dark); }
+.bg-dk-dark-alt { background-color: var(--dk-bg-dark-alt); }
+.bg-dk-light { background-color: var(--dk-bg-light); }
+.bg-dk-gray { background-color: var(--dk-bg-gray); }
+.bg-white { background-color: #ffffff; }
+
+.font-heading { font-family: var(--dk-font-heading); }
+.font-body { font-family: var(--dk-font-body); }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Grid utilities */
+.grid-dk {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Flexbox utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+
+/* Spacing utilities */
+.mb-0 { margin-bottom: 0; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+
+.mt-0 { margin-top: 0; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+
+@media (min-width: 1024px) {
+  .lg\:px-20 { padding-left: 5rem; padding-right: 5rem; }
+  .lg\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+}
+
+/* Border radius */
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* Shadow */
+.shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+.shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }

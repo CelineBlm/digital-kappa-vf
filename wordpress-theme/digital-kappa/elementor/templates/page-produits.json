@@ -1,0 +1,89 @@
+{
+  "title": "Tous nos produits - Digital Kappa",
+  "type": "page",
+  "content": [
+    {
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "bottom": "48"
+        }
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tous nos produits",
+                "align": "center",
+                "title_color": "#0d1421",
+                "typography_font_family": "Merriweather"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #4a5565;\">Découvrez notre catalogue complet de produits digitaux de qualité</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elType": "section",
+      "settings": {
+        "structure": "30",
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "bottom": "80"
+        }
+      },
+      "elements": [
+        {
+          "elType": "column",
+          "settings": {
+            "_column_size": 25
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_product_filters",
+              "settings": {
+                "show_categories": "yes",
+                "show_price_filter": "yes",
+                "show_rating_filter": "yes"
+              }
+            }
+          ]
+        },
+        {
+          "elType": "column",
+          "settings": {
+            "_column_size": 75
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "dk_products_grid",
+              "settings": {
+                "posts_per_page": 12,
+                "columns": "3",
+                "show_view_all_button": "no"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

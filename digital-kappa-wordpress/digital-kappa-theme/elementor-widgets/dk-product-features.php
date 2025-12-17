@@ -82,7 +82,12 @@ class DK_Product_Features_Widget extends \Elementor\Widget_Base {
             if (!$product) {
                 return;
             }
-            $features_raw = get_field('product_features', $product->get_id());
+            $features_raw = '';
+            if (function_exists('get_field')) {
+                $features_raw = get_field('product_features', $product->get_id());
+            } else {
+                $features_raw = get_post_meta($product->get_id(), '_dk_features', true);
+            }
             $features = $features_raw ? explode('|', $features_raw) : array();
         } else {
             $features = array_filter(explode("\n", $settings['features_list']));

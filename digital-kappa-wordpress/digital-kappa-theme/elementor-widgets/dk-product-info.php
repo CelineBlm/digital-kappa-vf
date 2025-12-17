@@ -124,8 +124,15 @@ class DK_Product_Info_Widget extends \Elementor\Widget_Base {
             return;
         }
 
-        $rating = (float) get_field('product_rating', $product->get_id()) ?: 4.5;
-        $review_count = (int) get_field('product_review_count', $product->get_id()) ?: 0;
+        $rating = 4.5;
+        $review_count = 0;
+        if (function_exists('get_field')) {
+            $rating = (float) get_field('product_rating', $product->get_id()) ?: 4.5;
+            $review_count = (int) get_field('product_review_count', $product->get_id()) ?: 0;
+        } else {
+            $rating = (float) get_post_meta($product->get_id(), '_dk_rating', true) ?: 4.5;
+            $review_count = $product->get_review_count();
+        }
         $categories = wc_get_product_category_list($product->get_id());
         ?>
         <div class="product-info space-y-6">

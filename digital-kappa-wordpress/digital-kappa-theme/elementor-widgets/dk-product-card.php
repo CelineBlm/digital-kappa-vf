@@ -196,7 +196,12 @@ class DK_Product_Card_Widget extends \Elementor\Widget_Base {
             $description = $product->get_short_description();
             $price = $product->get_price_html();
             $link = get_permalink($product->get_id());
-            $rating = (float) get_field('product_rating', $product->get_id()) ?: 4.5;
+            $rating = 4.5;
+            if (function_exists('get_field')) {
+                $rating = (float) get_field('product_rating', $product->get_id()) ?: 4.5;
+            } elseif (get_post_meta($product->get_id(), '_dk_rating', true)) {
+                $rating = (float) get_post_meta($product->get_id(), '_dk_rating', true);
+            }
             $categories = wc_get_product_category_list($product->get_id(), ', ');
         } else {
             $image_url = $settings['custom_image']['url'] ?? '';

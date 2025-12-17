@@ -93,7 +93,12 @@ class DK_Product_Tabs_Widget extends \Elementor\Widget_Base {
         }
 
         if ($settings['show_included'] === 'yes') {
-            $included = get_field('product_included', $product->get_id());
+            $included = '';
+            if (function_exists('get_field')) {
+                $included = get_field('product_included', $product->get_id());
+            } else {
+                $included = get_post_meta($product->get_id(), '_dk_included', true);
+            }
             if ($included) {
                 $tabs['included'] = array(
                     'title' => __('Ce qui est inclus', 'digital-kappa'),
@@ -104,7 +109,12 @@ class DK_Product_Tabs_Widget extends \Elementor\Widget_Base {
         }
 
         if ($settings['show_requirements'] === 'yes') {
-            $requirements = get_field('product_requirements', $product->get_id());
+            $requirements = '';
+            if (function_exists('get_field')) {
+                $requirements = get_field('product_requirements', $product->get_id());
+            } else {
+                $requirements = get_post_meta($product->get_id(), '_dk_requirements', true);
+            }
             if ($requirements) {
                 $tabs['requirements'] = array(
                     'title' => __('Prérequis', 'digital-kappa'),

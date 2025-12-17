@@ -189,7 +189,13 @@ class DK_Product_Grid_Widget extends \Elementor\Widget_Base {
                             <?php
                             $product = wc_get_product(get_the_ID());
                             $image_url = get_the_post_thumbnail_url(get_the_ID(), 'dk-product-card');
-                            $rating = (float) get_field('product_rating', get_the_ID()) ?: 4.5;
+                            // Get rating from ACF or post meta
+                            $rating = 4.5;
+                            if (function_exists('get_field')) {
+                                $rating = (float) get_field('product_rating', get_the_ID()) ?: 4.5;
+                            } elseif (get_post_meta(get_the_ID(), '_dk_rating', true)) {
+                                $rating = (float) get_post_meta(get_the_ID(), '_dk_rating', true);
+                            }
                             ?>
                             <div class="card-dk-product bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                                 <a href="<?php the_permalink(); ?>" class="block">

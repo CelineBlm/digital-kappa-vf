@@ -143,7 +143,12 @@ class DK_Product_Listing_Widget extends \Elementor\Widget_Base {
                         <?php
                         $product = wc_get_product(get_the_ID());
                         $image_url = get_the_post_thumbnail_url(get_the_ID(), 'dk-product-card');
-                        $rating = (float) get_field('product_rating', get_the_ID()) ?: 4.5;
+                        $rating = 4.5;
+                        if (function_exists('get_field')) {
+                            $rating = (float) get_field('product_rating', get_the_ID()) ?: 4.5;
+                        } elseif (get_post_meta(get_the_ID(), '_dk_rating', true)) {
+                            $rating = (float) get_post_meta(get_the_ID(), '_dk_rating', true);
+                        }
                         $categories = wc_get_product_category_list(get_the_ID());
                         ?>
                         <div class="card-dk-product bg-white rounded-2xl border border-[#f0f2f5] shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
